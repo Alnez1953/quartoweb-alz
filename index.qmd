@@ -1,6 +1,5 @@
 ---
 title: "To be a Stranger" 
-format: html 
 about:   
   template: marquee   
   image: lamp.png 
