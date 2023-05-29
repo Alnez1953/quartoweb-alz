@@ -1,1 +1,11 @@
 /* css styles */
+
+.navbar{
+  color: #800020;
+  background-color: #800020;
+}
+
+#title-block-header.quarto-title-block.default .quarto-title .title {
+    text-align: center;
+}
+
