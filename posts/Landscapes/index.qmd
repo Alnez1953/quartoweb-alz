@@ -3,3 +3,9 @@ title: "Landscapes"
 categories: [Landscapes]
 image: 101.png
 ---
+
+![](images/bus.png){fig-align="center"}
+
+![](images/IMG_1014.png){fig-align="center"}
+
+![](images/IMG_1337.png){fig-align="center"}
