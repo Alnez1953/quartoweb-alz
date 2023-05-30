@@ -2,8 +2,6 @@
 title: "About"
 ---
 
-About this site
+About this site:
 
-```{r}
-1 + 1
-```
+Generally I use this website to practice webdesign while using Quatro, it doesn't have too much purpose other than that at the moment. I'm working on several time consuming personal projects.
