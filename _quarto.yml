@@ -5,6 +5,10 @@ project:
 website:
   title: "quartoWeb-Alz"
   navbar:
+    left: 
+      - href: projects.qmd
+        text: Projects
+      
     right:
       - href: index.qmd
         text: Home

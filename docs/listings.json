@@ -5,5 +5,11 @@
       "/posts/Dog/index.html",
       "/posts/Landscapes/index.html"
     ]
+  },
+  {
+    "listing": "/projects.html",
+    "items": [
+      "/projects/index.html"
+    ]
   }
 ]
