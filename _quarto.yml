@@ -3,7 +3,7 @@ project:
   output-dir: docs
 
 website:
-  title: "Web-Alz-2"
+  title: "quartoWeb-Alz"
   navbar:
     right:
       - href: index.qmd
