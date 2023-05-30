@@ -1,5 +1,5 @@
 ---
-title: "Images"
+title: "Photography"
 listing:
   contents: posts
   sort: "date desc"
@@ -11,4 +11,7 @@ page-layout: full
 title-block-banner: false
 ---
 
-Scenery is changing
+```{=html}
+ <style> p {text-align: center;}</style>
+```
+Testing
