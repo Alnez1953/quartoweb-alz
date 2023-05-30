@@ -1,0 +1,7 @@
+---
+title: "Dog"
+categories: [Dog]
+image: 99.png
+---
+
+![](images/IMG_0844.png){fig-align="center"}
