@@ -1,9 +1,0 @@
----
-title: "Anime"
-categories: [Genre]
-image: ear.gif
----
-
-```{r}
-1+1
-```
