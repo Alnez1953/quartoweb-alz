@@ -1,10 +1,10 @@
 ---
-title: "Resume"
+title: "Cheat Sheet"
 ---
 
 ```{=html}
 <iframe
-  src="/pdf/Alz_resume.pdf"
+  src="/pdf/Cheatsheet.pdf"
   style="width: 100%; height: 100vh">
 </iframe>
 ```
