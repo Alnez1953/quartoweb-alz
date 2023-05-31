@@ -1,0 +1,10 @@
+---
+title: "Resume"
+---
+
+```{=html}
+<iframe
+  src="/quartoWeb-Alz/resume/Alz_resume.pdf"
+  style="width: 100%; height: 100vh">
+</iframe>
+```
