@@ -3,18 +3,15 @@ project:
   output-dir: docs
 
 website:
-  title: "quartoWeb-Alz"
+  title: "Home"
   navbar:
-    left: 
-      - href: projects.qmd
-        text: Projects
-      
     right:
-      - href: index.qmd
-        text: Home
       
       - href: about.qmd
         text: About
+      
+      - href: projects.qmd
+        text: Projects
         
       - href: images.qmd
         text: Photography
