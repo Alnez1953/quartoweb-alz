@@ -64,21 +64,3 @@ ggplot(dataVG, aes(y = Platform, x = Metascore, color = Metascore)) + geom_smoot
   axis.text.y = element_text(face = "bold", color = "black",size=9), plot.title = element_text(color = "black", size = 18, face = "bold", hjust = 0.5))+ labs(title = "Best Console", x = "Metascore", y = "Platforms")
 ```
 
-```{r}
-
-
-```
-
-```{r}
-
-```
-
-```{r}
-
-
-```
-
-```{r}
-
-
-```
