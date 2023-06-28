@@ -22,4 +22,4 @@ image: 101.png
 
 ![](images/IMG_2708.png){fig-align="center"}
 
-![](images/IMG_3145.jpg){fig-align="center"}
+![](images/IMG_3145.png){fig-align="center"}
