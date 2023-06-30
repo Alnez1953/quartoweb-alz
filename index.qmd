@@ -14,6 +14,17 @@ When we were babies the world was painted, filled with color, as we grew, we wer
 ```{=html}
 <hr> <style> h3 {text-align: center;}</style>
 ```
-### Test
+### Different Links 
 
-[ch.qmd](resume.qmd)
+|              Name              | Description |        Link        |
+|:------------------------------:|:-----------:|:------------------:|
+|    Vocab, Japanese Katakana    |             |                    |
+| Vocab, Japanese Hiragana/Kanji |             |                    |
+|                                |             | [ch.qmd](test.qmd) |
+|                                |             |                    |
+|                                |             |                    |
+|                                |             |                    |
+|                                |             |                    |
+|                                |             |                    |
+|                                |             |                    |
+|                                |             |                    |
