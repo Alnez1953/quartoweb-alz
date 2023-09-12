@@ -16,8 +16,7 @@ When we were babies the world was painted, filled with color, as we grew, we wer
 ```
 ### Different Links
 
-|              Name              | Description |        Link        |
-|:------------------------------:|:-----------:|:------------------:|
-|    Vocab, Japanese Katakana    |             |                    |
-| Vocab, Japanese Hiragana/Kanji |             |                    |
-|                                |             | [ch.qmd](test.qmd) |
+|              Name              | Description | Link |
+|:------------------------------:|:-----------:|:----:|
+|    Vocab, Japanese Katakana    |             |      |
+| Vocab, Japanese Hiragana/Kanji |             |      |
