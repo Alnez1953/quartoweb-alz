@@ -1,0 +1,11 @@
+---
+title: "Hiragana / Kanji Tables"
+---
+
+```{=html}
+<iframe
+  src="/pdf/HIRAGANA_KANJI_Nuñez-Japanese_Tables.pdf"
+  style="width: 100%; height: 100vh">
+</iframe>
+```
+
