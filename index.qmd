@@ -17,6 +17,6 @@ When we were babies the world was painted, filled with color, as we grew, we wer
 ### Different Links
 
 |          Name           |                            Description                            |                  Link                  |
-|:-----------------------------:|:---------------:|:-----------------------:|
+|:-----------------------:|:-----------------------------------------------------------------:|:--------------------------------------:|
 | Japanese Hiragana/Kanji | Vocab and practice phrases I formatted in a way to help me study. | [Hiragana / Kanji](hiragana_kanji.qmd) |
 |    Japanese Katakana    |           Vocab I formatted in a way to help me study.            |        [Katakana](katakana.qmd)        |
