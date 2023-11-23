@@ -1,7 +1,7 @@
 ---
 title: "Landscapes"
 categories: [Landscapes]
-image: 101.png
+image: 1337.png
 ---
 
 ![](images/bus.png){fig-align="center"}

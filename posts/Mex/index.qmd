@@ -1,0 +1,29 @@
+---
+title: "Mexico"
+categories: [Mex, Landscapes]
+image: igualdad.png
+---
+
+![](images/DSCF1321.png)
+
+![](images/DSCF1200.png){fig-align="center"}
+
+![](images/DSCF1201.png){fig-align="center"}
+
+![](images/DSCF1207.png){fig-align="center"}
+
+![](images/DSCF1350.png){fig-align="center"}
+
+![](images/DSCF1279.png){fig-align="center"}
+
+![](images/DSCF1345.png){fig-align="center"}
+
+![](images/DSCF1252.png){fig-align="center"}
+
+![](images/DSCF1266.png){fig-align="center"}
+
+![](images/DSCF1209.png){fig-align="center"}
+
+![](images/DSCF1299.png){fig-align="center"}
+
+![](images/DSCF1236.png){fig-align="center"}
