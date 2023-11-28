@@ -1,0 +1,35 @@
+---
+title: "Oldies"
+categories: [Oldies]
+image: DSCN1143.jpg
+---
+
+![](images/DSCN0857.JPG){fig-align="center"}
+
+![](images/DSCN0248.JPG){fig-align="center"}
+
+![](images/DSCN0250.JPG){fig-align="center"}
+
+![](images/DSCN0532.JPG){fig-align="center"}
+
+![](images/DSCN0258.JPG){fig-align="center"}
+
+![](images/DSCN0688.JPG){fig-align="center"}
+
+![](images/DSCN0576.JPG){fig-align="center"}
+
+![](images/DSCN0580.JPG){fig-align="center"}
+
+![](images/DSCN0427.JPG){fig-align="center"}
+
+![](images/DSCN0991.JPG){fig-align="center"}
+
+![](images/DSCN0832.JPG){fig-align="center"}
+
+![](images/DSCN0272.JPG){fig-align="center"}
+
+![](images/DSCN1077.JPG){fig-align="center"}
+
+![](images/DSCN1087.JPG){fig-align="center"}
+
+![](images/DSCN0011.JPG){fig-align="center"}
