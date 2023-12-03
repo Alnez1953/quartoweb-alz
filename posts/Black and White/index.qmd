@@ -1,0 +1,25 @@
+---
+title: "Black and White"
+categories: [Black and White]
+image: park.jpg
+---
+
+![](images/3713.jpg){fig-align="center"}
+
+![](park.JPG){fig-align="center"}
+
+![](images/3646.jpg){fig-align="center"}
+
+![](images/4207.jpg){fig-align="center"}
+
+![](images/3642.jpg){fig-align="center"}
+
+![](images/4112.jpg){fig-align="center"}
+
+![](images/4183.jpg){fig-align="center"}
+
+![](images/4241.jpg){fig-align="center"}
+
+![](images/3667.jpg){fig-align="center"}
+
+![](images/4085.jpg){fig-align="center"}
