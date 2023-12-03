@@ -6,7 +6,7 @@ image: park.jpg
 
 ![](images/3713.jpg){fig-align="center"}
 
-![](park.JPG){fig-align="center"}
+![](images/park.JPG){fig-align="center"}
 
 ![](images/3646.jpg){fig-align="center"}
 
