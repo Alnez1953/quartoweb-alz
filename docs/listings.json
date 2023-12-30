@@ -1,5 +1,13 @@
 [
   {
+    "listing": "/projects.html",
+    "items": [
+      "/projects/Anime/index.html",
+      "/projects/Shoppers/index.html",
+      "/projects/VidGame/index.html"
+    ]
+  },
+  {
     "listing": "/images.html",
     "items": [
       "/posts/Black and White/index.html",
@@ -7,14 +15,6 @@
       "/posts/Landscapes/index.html",
       "/posts/Mex/index.html",
       "/posts/Oldies/index.html"
-    ]
-  },
-  {
-    "listing": "/projects.html",
-    "items": [
-      "/projects/Anime/index.html",
-      "/projects/Shoppers/index.html",
-      "/projects/VidGame/index.html"
     ]
   }
 ]
