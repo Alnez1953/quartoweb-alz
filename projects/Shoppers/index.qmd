@@ -24,3 +24,8 @@ shopping_trends %>% group_by(Gender)
 ggplot(data.frame(shopping_trends), aes(x=shopping_trends$Category)) +
   geom_bar() 
 ```
+
+```{r}
+
+
+```

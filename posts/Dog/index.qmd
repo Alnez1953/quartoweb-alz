@@ -1,7 +1,11 @@
 ---
-title: "Dog"
-categories: [Dog]
+title: "Animals"
+categories: [Animals]
 image: 0844.png
+lightbox: true
 ---
+::: {layout="[1], [1,1]"}
 
-![](images/IMG_0844.png){fig-align="center"}
+![](images/IMG_0844.png){group="Animals"}
+
+:::

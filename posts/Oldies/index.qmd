@@ -2,34 +2,40 @@
 title: "Oldies"
 categories: [Oldies]
 image: DSCN1143.jpg
+lightbox: true
 ---
 
-![](images/DSCN0857.JPG){fig-align="center"}
+::: {layout="[1,1]"}
 
-![](images/DSCN0248.JPG){fig-align="center"}
+![](images/DSCN0857.JPG){group="Oldies"}
 
-![](images/DSCN0250.JPG){fig-align="center"}
+![](images/DSCN0532.JPG){group="Oldies"}
 
-![](images/DSCN0532.JPG){fig-align="center"}
+![](images/DSCN0248.JPG){group="Oldies"}
 
-![](images/DSCN0258.JPG){fig-align="center"}
+![](images/DSCN0250.JPG){group="Oldies"}
 
-![](images/DSCN0688.JPG){fig-align="center"}
+![](images/DSCN0258.JPG){group="Oldies"}
 
-![](images/DSCN0576.JPG){fig-align="center"}
+![](images/DSCN0688.JPG){group="Oldies"}
 
-![](images/DSCN0580.JPG){fig-align="center"}
+![](images/DSCN0576.JPG){group="Oldies"}
 
-![](images/DSCN0427.JPG){fig-align="center"}
+![](images/DSCN0580.JPG){group="Oldies"}
 
-![](images/DSCN0991.JPG){fig-align="center"}
+![](images/DSCN0427.JPG){group="Oldies"}
 
-![](images/DSCN0832.JPG){fig-align="center"}
+![](images/DSCN0991.JPG){group="Oldies"}
 
-![](images/DSCN0272.JPG){fig-align="center"}
+![](images/DSCN0832.JPG){group="Oldies"}
 
-![](images/DSCN1077.JPG){fig-align="center"}
+![](images/DSCN1077.JPG){group="Oldies"}
 
-![](images/DSCN1087.JPG){fig-align="center"}
+![](images/DSCN1087.JPG){group="Oldies"}
 
-![](images/DSCN0011.JPG){fig-align="center"}
+![](images/DSCN0011.JPG){group="Oldies"}
+
+:::
+
+![](images/DSCN0272.JPG){group="Oldies"}
+

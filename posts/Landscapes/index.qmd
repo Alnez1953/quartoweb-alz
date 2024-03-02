@@ -2,24 +2,30 @@
 title: "Landscapes"
 categories: [Landscapes]
 image: 1337.png
+lightbox: true
 ---
+::: {layout="[1,1]"}
 
-![](images/bus.png){fig-align="center"}
+![](images/bus.png){group="Landscapes"}
 
-![](images/IMG_1014.png){fig-align="center"}
+![](images/IMG_1014.png){group="Landscapes"}
 
-![](images/IMG_1337.png){fig-align="center"}
+![](images/IMG_1337.png){group="Landscapes"}
 
-![](images/IMG_0950.png){fig-align="center"}
+![](images/IMG_0950.png){group="Landscapes"}
 
-![](images/IMG_0991.png){fig-align="center"}
+![](images/IMG_0991.png){group="Landscapes"}
 
-![](images/IMG_1427.png){fig-align="center"}
+![](images/IMG_1427.png){group="Landscapes"}
 
-![](images/IMG_1511.png){fig-align="center"}
+![](images/IMG_1511.png){group="Landscapes"}
 
-![](images/IMG_2097.png){fig-align="center"}
+![](images/IMG_2097.png){group="Landscapes"}
 
-![](images/IMG_2708.png){fig-align="center"}
+![](images/IMG_2708.png){group="Landscapes"}
 
-![](images/IMG_3145.png){fig-align="center"}
+![](images/IMG_1640.jpg){group="Landscapes"}
+:::
+
+![](images/IMG_3145.png){group="Landscapes"}
+

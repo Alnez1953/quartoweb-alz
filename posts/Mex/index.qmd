@@ -2,28 +2,41 @@
 title: "Mexico"
 categories: [Mex, Landscapes]
 image: igualdad.png
+lightbox: true
 ---
 
-![](images/DSCF1321.png)
+::: {layout="[1,1]"}
 
-![](images/DSCF1200.png){fig-align="center"}
+![](images/DSCF1321.png){group="Mexico"}
 
-![](images/DSCF1201.png){fig-align="center"}
+![](images/DSCF1200.png){group="Mexico"}
 
-![](images/DSCF1207.png){fig-align="center"}
+:::
 
-![](images/DSCF1350.png){fig-align="center"}
+![](images/DSCF1201.png)
 
-![](images/DSCF1279.png){fig-align="center"}
+![](images/DSCF1207.png)
 
-![](images/DSCF1345.png){fig-align="center"}
+::: {layout="[1,1]"}
 
-![](images/DSCF1252.png){fig-align="center"}
+![](images/DSCF1350.png){group="Mexico"}
 
-![](images/DSCF1266.png){fig-align="center"}
+![](images/DSCF1279.png){group="Mexico"}
 
-![](images/DSCF1209.png){fig-align="center"}
+:::
 
-![](images/DSCF1299.png){fig-align="center"}
+![](images/DSCF1345.png)
 
-![](images/DSCF1236.png){fig-align="center"}
+![](images/DSCF1266.png)
+
+::: {layout="[1,1]"}
+
+![](images/DSCF1252.png){group="Mexico"}
+
+![](images/DSCF1209.png){group="Mexico"}
+
+![](images/DSCF1299.png){group="Mexico"}
+
+![](images/DSCF1236.png){group="Mexico"}
+
+:::

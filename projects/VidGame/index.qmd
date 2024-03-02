@@ -14,15 +14,18 @@ library(ggplot2)
 
 ```{r}
 dataVG <- read_csv("data.csv")
-dataVG <- dataVG %>% select(Rank, Name, Platform, Metascore, Date, Title)
-dataVG <- transform(dataVG,"Platform_Frequency"=ave(seq(nrow(dataVG)),Platform,FUN=length)) %>% group_by(Platform)
+dataVG <- dataVG %>% select(Name, Platform, Metascore, Date, Title)
+#Sample of the data
+head(dataVG)
+
+dataVG_Fil <- transform(dataVG,"Platform_Frequency"=ave(seq(nrow(dataVG)),Platform,FUN=length)) %>% group_by(Platform)
 
 getmode <- function(v) {
    uniqv <- unique(v)
    uniqv[which.max(tabulate(match(v, uniqv)))]
 }
 
-dataVG %>% summarise("Platform_Frequency"=getmode(Platform_Frequency), "Meta-Sum"=sum(Metascore),"Meta-Mean"=mean(Metascore))
+dataVG_Fil %>% summarise("Platform_Frequency"=getmode(Platform_Frequency), "Meta-Sum"=sum(Metascore),"Meta-Mean"=mean(Metascore))
 ```
 
 ```{r}
@@ -41,12 +44,10 @@ ggplot(dataVG, aes(x = Platform)) +
                                 colour = "black"),
   plot.background = element_rect(fill = "gray"),
   axis.text.x = element_text(face = "bold", color = "black", size=9, angle = 45,hjust=1),
-  axis.text.y = element_text(face = "bold", color = "black",size=9, hjust=1), plot.title = element_text(color = "black", size = 18, face = "bold", hjust = 0.5))+ labs(title = "Best Console", x = "Metascore", y = "Platforms")
+  axis.text.y = element_text(face = "bold", color = "black",size=9, hjust=1), plot.title = element_text(color = "black", size = 18, face = "bold", hjust = 0.5))+ labs(title = "Best Console", x = "Platforms", y = "Frequency")
 
 #graph created by comparing the values in both columns on the given dataset
-ggplot(dataVG, aes(y = Platform, x = Metascore, color = Metascore)) + geom_smooth(method = "lm") +
-  #converts into a point graph
-  geom_count() +
+ggplot(dataVG, aes(y = Platform, x = Metascore, color = Metascore)) + geom_point(method = "lm") +
   #Aesthetics and graph details.
   theme(
   panel.background = element_rect(fill = "white",
@@ -59,4 +60,13 @@ ggplot(dataVG, aes(y = Platform, x = Metascore, color = Metascore)) + geom_smoot
   plot.background = element_rect(fill = "gray"),
   axis.text.x = element_text(face = "bold", color = "black", size=9),
   axis.text.y = element_text(face = "bold", color = "black",size=9), plot.title = element_text(color = "black", size = 18, face = "bold", hjust = 0.5))+ labs(title = "Best Console", x = "Metascore", y = "Platforms")
+```
+
+```{r}
+dataVG_Fil %>% select(Name, Platform, Metascore , Date, Platform_Frequency) %>% group_by(Platform)
+#Sample of the filtered Data
+head(dataVG_Fil)
+
+ggplot(dataVG_Fil, aes(x = Platform_Frequency, y = Platform)) + geom_point() + geom_count(colour="Blue")
+
 ```
