@@ -4,6 +4,8 @@ categories: [Work in Progress]
 image: 3951.jpg
 ---
 
+Analyzing...
+
 ```{r load-packages, include=FALSE}
 knitr::opts_chunk$set(warning = FALSE, message = FALSE) 
 library(tidyverse)

@@ -4,6 +4,8 @@ categories: [Genre]
 image: ear.gif
 ---
 
+Analyzing...
+
 ```{=html}
 <iframe
   src="/projects/Anime/DatAnimeSet.pdf"
