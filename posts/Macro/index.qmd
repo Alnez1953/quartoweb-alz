@@ -1,0 +1,15 @@
+---
+title: "Macro"
+categories: [Macro]
+image: IMG_0836.png
+lightbox: true
+---
+
+![](images/IMG_0836.png){group="Macro"}
+
+::: {layout="[1,1]"}
+
+![](images/IMG_1565.png){group="Macro"}
+
+![](images/IMG_1620.png){group="Macro"}
+:::

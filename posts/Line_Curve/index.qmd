@@ -1,0 +1,21 @@
+---
+title: "Line_Curve Shinanigans"
+categories: [LineCurve]
+image: IMG_1351.png
+lightbox: true
+---
+
+::: {layout="[1,1]"}
+![](images/IMG_1351.png){group="LC"}
+
+![](images/IMG_1391.png){group="LC"}
+
+![](images/IMG_0954.png){group="LC"}
+
+![](images/IMG_2131.png){group="LC"}
+
+![](images/IMG_1380.png){group="LC"}
+
+![](images/IMG_2149.png){group="LC"}
+:::
+

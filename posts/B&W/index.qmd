@@ -1,0 +1,30 @@
+---
+title: "Black and White"
+categories: [Black and White]
+image: park.jpg
+lightbox: true
+---
+
+::: {layout="[1,1]"}
+![](images/3713.jpg){group="B&W"}
+
+![](images/4207.jpg){group="B&W"}
+
+![](images/park.JPG){group="B&W"}
+
+![](images/3646.jpg){group="B&W"}
+
+![](images/4112.jpg){group="B&W"}
+
+![](images/4183.jpg){group="B&W"}
+
+![](images/3642.jpg){group="B&W"}
+
+![](images/4241.jpg){group="B&W"}
+
+![](images/4085.jpg){group="B&W"}
+
+![](images/1732.png){group="B&W"}
+:::
+
+![](images/3667.jpg){group="B&W"}

@@ -1,0 +1,32 @@
+---
+title: "Doubles"
+categories: [Doubles]
+image: IMG_1553.png
+lightbox: true
+---
+
+::: {layout="[1,1]"}
+![](images/IMG_1486_01.png){group="Doubles"}
+
+![](images/IMG_1486.png){group="Doubles"}
+
+![](images/IMG_09501.png){group="Doubles"}
+
+![](images/IMG_09501_01.png){group="Doubles"}
+
+![](images/IMG_1553.png){group="Doubles"}
+
+![](images/IMG_1553_01.png){group="Doubles"}
+
+![](images/IMG_1380.png){group="Doubles"}
+
+![](images/IMG_1380_01.png){group="Doubles"}
+
+![](images/IMG_3740.png){group="Doubles"}
+
+![](images/IMG_3746.png){group="Doubles"}
+
+![](images/IMG_3651.png){group="Doubles"}
+
+![](images/IMG_3651_01.png){group="Doubles"}
+:::

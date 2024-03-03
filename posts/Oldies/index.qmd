@@ -5,8 +5,9 @@ image: DSCN1143.jpg
 lightbox: true
 ---
 
-::: {layout="[1,1]"}
+![](images/DSCN1050.JPG){group="Oldies"}
 
+::: {layout="[1,1]"}
 ![](images/DSCN0857.JPG){group="Oldies"}
 
 ![](images/DSCN0532.JPG){group="Oldies"}
@@ -35,7 +36,77 @@ lightbox: true
 
 ![](images/DSCN0011.JPG){group="Oldies"}
 
+![](images/DSCN0674.JPG){group="Oldies"}
+
+![](images/DSCN0746.JPG){group="Oldies"}
+
+![](images/DSCN0712.JPG){group="Oldies"}
+
+![](images/DSCN0718.JPG){group="Oldies"}
+
+![](images/DSCN0296.JPG){group="Oldies"}
+
+![](images/DSCN0350.JPG){group="Oldies"}
+
+![](images/DSCN0225.JPG){group="Oldies"}
+
+![](images/DSCN0215.JPG){group="Oldies"}
+
+![](images/DSCN0399.JPG){group="Oldies"}
+
+![](images/DSCN1009.JPG){group="Oldies"}
+
+![](images/DSCN1275.JPG){group="Oldies"}
+
+![](images/DSCN1218.JPG){group="Oldies"}
+
+![](images/DSCN1192.JPG){group="Oldies"}
+
+![](images/DSCN1143.JPG){group="Oldies"}
+
+![](images/DSCN1047.JPG){group="Oldies"}
+
+![](images/DSCN1076.JPG){group="Oldies"}
+
+![](images/DSCN0940.JPG){group="Oldies"}
+
+![](images/DSCN0919.JPG){group="Oldies"}
+
+![](images/DSCN0787.JPG){group="Oldies"}
+
+![](images/DSCN0749.JPG){group="Oldies"}
+
+![](images/DSCN0893.JPG){group="Oldies"}
+
+![](images/RSCN0818.JPG){group="Oldies"}
+
+![](images/DSCN1160.JPG){group="Oldies"}
+
+![](images/DSCN0092.JPG){group="Oldies"}
+
+![](images/DSCN0271.JPG){group="Oldies"}
+
+![](images/DSCN0591.JPG){group="Oldies"}
+
+![](images/DSCN0597.JPG){group="Oldies"}
+
+![](images/DSCN0740.JPG){group="Oldies"}
+
+![](images/DSCN0742.JPG){group="Oldies"}
+
+![](images/DSCN1088.JPG){group="Oldies"}
+
+![](images/DSCN1134.JPG){group="Oldies"}
+
+![](images/DSCN1149.JPG){group="Oldies"}
+
+![](images/DSCN1044.JPG){group="Oldies"}
+
+![](images/DSCN0643.JPG){group="Oldies"}
+
+![](images/DSCN0898.JPG){group="Oldies"}
+
+![](images/DSCN1331.JPG){group="Oldies"}
 :::
 
 ![](images/DSCN0272.JPG){group="Oldies"}
-

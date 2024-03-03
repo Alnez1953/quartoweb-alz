@@ -1,0 +1,18 @@
+---
+title: "Japan"
+categories: [Japan, Landscapes]
+image: IMG_3747.png
+lightbox: true
+---
+
+::: {layout="[1,1]"}
+![](images/IMG_3747.png){group="JP"}
+
+![](images/IMG_3793_01.png){group="JP"}
+
+![](images/IMG_3751.png){group="JP"}
+
+![](images/IMG_3689.png){group="JP"}
+:::
+
+![](images/IMG_3746.png){group="JP"}

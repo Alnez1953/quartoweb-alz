@@ -78,9 +78,9 @@ ul.task-list li input[type="checkbox"] {
     }
 
     const options = {
-      valueNames: ['listing-title','listing-author','listing-image','listing-description','listing-categories',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
+      valueNames: ['listing-title','listing-author','listing-image','listing-description',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
       
-      searchColumns: ["listing-title","listing-author","listing-image","listing-description","listing-categories"],
+      searchColumns: ["listing-title","listing-author","listing-image","listing-description"],
     };
 
     window['quarto-listings'] = window['quarto-listings'] || {};
@@ -185,10 +185,9 @@ window.Quarto = {
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(5)</span></div><div class="category" data-category="Animals">Animals <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Black and White">Black and White <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Landscapes">Landscapes <span class="quarto-category-count">(2)</span></div><div class="category" data-category="Mex">Mex <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Oldies">Oldies <span class="quarto-category-count">(1)</span></div></div></div>
+    
 <!-- main -->
-<main class="content column-page-left" id="quarto-document-content">
+<main class="content column-page" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
@@ -197,7 +196,7 @@ window.Quarto = {
 
 
 
-<div class="quarto-title-meta column-page-left">
+<div class="quarto-title-meta column-page">
 
     
   
@@ -216,50 +215,16 @@ window.Quarto = {
 
 <div class="quarto-listing quarto-listing-container-grid" id="listing-listing">
 <div class="list grid quarto-listing-cols-3">
-<div class="g-col-1" data-index="0" data-categories="Black and White" data-listing-file-modified-sort="1709344267520" data-listing-reading-time-sort="1" data-listing-word-count-sort="2">
-<a href="./posts/Black and White/index.html" class="quarto-grid-link">
+<div class="g-col-1" data-index="0" data-categories="Animals" data-listing-file-modified-sort="1709497693690" data-listing-reading-time-sort="1" data-listing-word-count-sort="2">
+<a href="./posts/Animal/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
-<img src="./posts/Black and White/park.jpg" class="thumbnail-image card-img" style="height: 150px;">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Black and White
-</h5>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('Black and White'); return false;">
-Black and White
-</div>
-</div>
-<div class="card-text listing-description">
-
-
-
-</div>
-<div class="card-attribution card-text-small start">
-<div class="listing-author">
-
-</div>
-</div>
-</div>
-</div>
-</a>
-</div>
-<div class="g-col-1" data-index="1" data-categories="Animals" data-listing-file-modified-sort="1709343738049" data-listing-reading-time-sort="1" data-listing-word-count-sort="3">
-<a href="./posts/Dog/index.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top">
-<img src="./posts/Dog/0844.png" class="thumbnail-image card-img" style="height: 150px;">
+<img src="./posts/Animal/0844.png" class="thumbnail-image card-img" style="height: 150px;">
 </p>
 <div class="card-body post-contents">
 <h5 class="no-anchor card-title listing-title">
 Animals
 </h5>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('Animals'); return false;">
-Animals
-</div>
-</div>
 <div class="card-text listing-description">
 
 
@@ -274,21 +239,16 @@ Animals
 </div>
 </a>
 </div>
-<div class="g-col-1" data-index="2" data-categories="Landscapes" data-listing-file-modified-sort="1709343580694" data-listing-reading-time-sort="1" data-listing-word-count-sort="2">
-<a href="./posts/Landscapes/index.html" class="quarto-grid-link">
+<div class="g-col-1" data-index="1" data-categories="Black and White" data-listing-file-modified-sort="1709413447824" data-listing-reading-time-sort="1" data-listing-word-count-sort="2">
+<a href="./posts/B&amp;W/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
-<img src="./posts/Landscapes/1337.png" class="thumbnail-image card-img" style="height: 150px;">
+<img src="./posts/B&amp;W/park.jpg" class="thumbnail-image card-img" style="height: 150px;">
 </p>
 <div class="card-body post-contents">
 <h5 class="no-anchor card-title listing-title">
-Landscapes
+Black and White
 </h5>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('Landscapes'); return false;">
-Landscapes
-</div>
-</div>
 <div class="card-text listing-description">
 
 
@@ -303,7 +263,127 @@ Landscapes
 </div>
 </a>
 </div>
-<div class="g-col-1" data-index="3" data-categories="Mex,Landscapes" data-listing-file-modified-sort="1709343293483" data-listing-reading-time-sort="1" data-listing-word-count-sort="4">
+<div class="g-col-1" data-index="2" data-categories="Doubles" data-listing-file-modified-sort="1709499654229" data-listing-reading-time-sort="1" data-listing-word-count-sort="2">
+<a href="./posts/Doubles/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img src="./posts/Doubles/IMG_1553.png" class="thumbnail-image card-img" style="height: 150px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Doubles
+</h5>
+<div class="card-text listing-description">
+
+
+
+</div>
+<div class="card-attribution card-text-small start">
+<div class="listing-author">
+
+</div>
+</div>
+</div>
+</div>
+</a>
+</div>
+<div class="g-col-1" data-index="3" data-categories="Flora" data-listing-file-modified-sort="1709499371816" data-listing-reading-time-sort="1" data-listing-word-count-sort="2">
+<a href="./posts/Flora/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img src="./posts/Flora/IMG_3228.png" class="thumbnail-image card-img" style="height: 150px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Flora
+</h5>
+<div class="card-text listing-description">
+
+
+
+</div>
+<div class="card-attribution card-text-small start">
+<div class="listing-author">
+
+</div>
+</div>
+</div>
+</div>
+</a>
+</div>
+<div class="g-col-1" data-index="4" data-categories="Japan,Landscapes" data-listing-file-modified-sort="1709499454912" data-listing-reading-time-sort="1" data-listing-word-count-sort="2">
+<a href="./posts/Japan/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img src="./posts/Japan/IMG_3747.png" class="thumbnail-image card-img" style="height: 150px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Japan
+</h5>
+<div class="card-text listing-description">
+
+
+
+</div>
+<div class="card-attribution card-text-small start">
+<div class="listing-author">
+
+</div>
+</div>
+</div>
+</div>
+</a>
+</div>
+<div class="g-col-1" data-index="5" data-categories="LineCurve" data-listing-file-modified-sort="1709498232430" data-listing-reading-time-sort="1" data-listing-word-count-sort="2">
+<a href="./posts/Line_Curve/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img src="./posts/Line_Curve/IMG_1351.png" class="thumbnail-image card-img" style="height: 150px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Line_Curve Shinanigans
+</h5>
+<div class="card-text listing-description">
+
+
+
+</div>
+<div class="card-attribution card-text-small start">
+<div class="listing-author">
+
+</div>
+</div>
+</div>
+</div>
+</a>
+</div>
+<div class="g-col-1" data-index="6" data-categories="Macro" data-listing-file-modified-sort="1709498065634" data-listing-reading-time-sort="1" data-listing-word-count-sort="2">
+<a href="./posts/Macro/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img src="./posts/Macro/IMG_0836.png" class="thumbnail-image card-img" style="height: 150px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Macro
+</h5>
+<div class="card-text listing-description">
+
+
+
+</div>
+<div class="card-attribution card-text-small start">
+<div class="listing-author">
+
+</div>
+</div>
+</div>
+</div>
+</a>
+</div>
+<div class="g-col-1" data-index="7" data-categories="Mex,Landscapes" data-listing-file-modified-sort="1709497864189" data-listing-reading-time-sort="1" data-listing-word-count-sort="4">
 <a href="./posts/Mex/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -313,14 +393,6 @@ Landscapes
 <h5 class="no-anchor card-title listing-title">
 Mexico
 </h5>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('Mex'); return false;">
-Mex
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('Landscapes'); return false;">
-Landscapes
-</div>
-</div>
 <div class="card-text listing-description">
 
 
@@ -335,7 +407,31 @@ Landscapes
 </div>
 </a>
 </div>
-<div class="g-col-1" data-index="4" data-categories="Oldies" data-listing-file-modified-sort="1709343201475" data-listing-reading-time-sort="1" data-listing-word-count-sort="2">
+<div class="g-col-1" data-index="8" data-categories="Moon" data-listing-file-modified-sort="1709497845079" data-listing-reading-time-sort="1" data-listing-word-count-sort="2">
+<a href="./posts/Moon/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img src="./posts/Moon/IMG_1298.png" class="thumbnail-image card-img" style="height: 150px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Moon
+</h5>
+<div class="card-text listing-description">
+
+
+
+</div>
+<div class="card-attribution card-text-small start">
+<div class="listing-author">
+
+</div>
+</div>
+</div>
+</div>
+</a>
+</div>
+<div class="g-col-1" data-index="9" data-categories="Oldies" data-listing-file-modified-sort="1709501375742" data-listing-reading-time-sort="1" data-listing-word-count-sort="2">
 <a href="./posts/Oldies/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -345,11 +441,54 @@ Landscapes
 <h5 class="no-anchor card-title listing-title">
 Oldies
 </h5>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('Oldies'); return false;">
-Oldies
+<div class="card-text listing-description">
+
+
+
+</div>
+<div class="card-attribution card-text-small start">
+<div class="listing-author">
+
 </div>
 </div>
+</div>
+</div>
+</a>
+</div>
+<div class="g-col-1" data-index="10" data-categories="Street" data-listing-file-modified-sort="1709497798381" data-listing-reading-time-sort="1" data-listing-word-count-sort="2">
+<a href="./posts/Street/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img src="./posts/Street/2476.png" class="thumbnail-image card-img" style="height: 150px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Street
+</h5>
+<div class="card-text listing-description">
+
+
+
+</div>
+<div class="card-attribution card-text-small start">
+<div class="listing-author">
+
+</div>
+</div>
+</div>
+</div>
+</a>
+</div>
+<div class="g-col-1" data-index="11" data-categories="UT/ID,Landscapes" data-listing-file-modified-sort="1709498332816" data-listing-reading-time-sort="1" data-listing-word-count-sort="2">
+<a href="./posts/UT＿ID/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img src="./posts/UT＿ID/1337.png" class="thumbnail-image card-img" style="height: 150px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Utah/Idaho
+</h5>
 <div class="card-text listing-description">
 
 

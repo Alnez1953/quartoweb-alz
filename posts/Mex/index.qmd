@@ -6,11 +6,9 @@ lightbox: true
 ---
 
 ::: {layout="[1,1]"}
-
 ![](images/DSCF1321.png){group="Mexico"}
 
 ![](images/DSCF1200.png){group="Mexico"}
-
 :::
 
 ![](images/DSCF1201.png)
@@ -18,11 +16,9 @@ lightbox: true
 ![](images/DSCF1207.png)
 
 ::: {layout="[1,1]"}
-
 ![](images/DSCF1350.png){group="Mexico"}
 
 ![](images/DSCF1279.png){group="Mexico"}
-
 :::
 
 ![](images/DSCF1345.png)
@@ -30,7 +26,6 @@ lightbox: true
 ![](images/DSCF1266.png)
 
 ::: {layout="[1,1]"}
-
 ![](images/DSCF1252.png){group="Mexico"}
 
 ![](images/DSCF1209.png){group="Mexico"}
@@ -38,5 +33,4 @@ lightbox: true
 ![](images/DSCF1299.png){group="Mexico"}
 
 ![](images/DSCF1236.png){group="Mexico"}
-
 :::

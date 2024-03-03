@@ -1,0 +1,44 @@
+---
+title: "Utah/Idaho"
+categories: [UT/ID, Landscapes]
+image: 1337.png
+lightbox: true
+---
+
+::: {layout="[1,1]"}
+![](images/bus.png){group="UT/ID"}
+
+![](images/IMG_1605.png){group="UT/ID"}
+
+![](images/IMG_1337.png){group="UT/ID"}
+
+![](images/IMG_1334.png){group="UT/ID"}
+
+![](images/IMG_1368.png){group="UT/ID"}
+
+![](images/IMG_1401.png){group="UT/ID"}
+
+![](images/IMG_1472.png){group="UT/ID"}
+
+![](images/IMG_1427.png){group="UT/ID"}
+
+![](images/IMG_1480.png){group="UT/ID"}
+
+![](images/IMG_1496.png){group="UT/ID"}
+
+![](images/IMG_1511.png){group="UT/ID"}
+
+![](images/IMG_1579.png){group="UT/ID"}
+
+![](images/IMG_1640.png){group="UT/ID"}
+
+![](images/IMG_1685.png){group="UT/ID"}
+
+![](images/IMG_1689.png){group="UT/ID"}
+
+![](images/IMG_1697.png){group="UT/ID"}
+
+![](images/IMG_1782.png){group="UT/ID"}
+
+![](images/IMG_1786.png){group="UT/ID"}
+:::
