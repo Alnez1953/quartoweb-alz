@@ -38,8 +38,6 @@ lightbox: true
 
 ![](images/DSCN0674.JPG){group="Oldies"}
 
-![](images/DSCN0746.JPG){group="Oldies"}
-
 ![](images/DSCN0712.JPG){group="Oldies"}
 
 ![](images/DSCN0718.JPG){group="Oldies"}
@@ -63,8 +61,6 @@ lightbox: true
 ![](images/DSCN1192.JPG){group="Oldies"}
 
 ![](images/DSCN1143.JPG){group="Oldies"}
-
-![](images/DSCN1047.JPG){group="Oldies"}
 
 ![](images/DSCN1076.JPG){group="Oldies"}
 
