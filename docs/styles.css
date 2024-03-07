@@ -9,3 +9,88 @@
     text-align: center;
 }
 
+.title {
+  color: #8B7500;
+}
+
+.header{
+  font-size: 30px;
+  text-align: center;
+  color: #8B7500;
+}
+
+.odd {
+  color: #DBDBDB;
+}
+
+.even {
+  color: #DBDBDB;
+}
+
+.menu-text{
+  color: white;
+}
+
+.navbar-title{
+  color: white;
+}
+
+/* Changes Github logo to white in the navbar*/
+.bi.bi-github{
+  color: white;
+}
+
+/* Changes Youtube logo to white in the navbar*/
+.bi.bi-youtube{
+  color: white;
+}
+
+/* Format for HyperLinks*/
+a:link{
+  color: #8DEEEE;
+}
+
+/* Format for HyperLinks*/
+a:visited{
+  color: brown;
+}
+
+/* Format for HyperLinks*/
+a:hover{
+  color: red;
+}
+
+/* Format for HyperLinks*/
+a:active{
+  color: darkslategray;
+}
+
+body{
+  background-color: black;
+}
+
+h1 {
+  color: #DBDBDB;
+}
+
+h2 {
+  color: #DBDBDB;
+}
+
+h3 {
+  color: #DBDBDB;
+}
+
+.table{
+  background-color: #303030;
+}
+
+p {
+  color: #DBDBDB;
+  text-indent: 40px;
+}
+
+p.card-img-top {
+  color: #DBDBDB;
+  text-indent: 0px;
+}
