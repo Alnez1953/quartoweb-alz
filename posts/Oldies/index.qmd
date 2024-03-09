@@ -106,3 +106,9 @@ lightbox: true
 :::
 
 ![](images/DSCN0272.JPG){group="Oldies"}
+
+```{=html}
+<style>
+p {text-indent: 0px}
+</style>
+```

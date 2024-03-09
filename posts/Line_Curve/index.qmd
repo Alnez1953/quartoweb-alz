@@ -19,3 +19,8 @@ lightbox: true
 ![](images/IMG_2149.png){group="LC"}
 :::
 
+```{=html}
+<style>
+p {text-indent: 0px}
+</style>
+```

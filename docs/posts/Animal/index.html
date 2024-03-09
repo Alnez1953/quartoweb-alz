@@ -152,6 +152,9 @@ ul.task-list li input[type="checkbox"] {
 </div>
 </div>
 <p><a href="images/IMG_3820.png" class="lightbox" data-gallery="Animals"><img src="images/IMG_3820.png" class="img-fluid"></a></p>
+<style>
+p {text-indent: 0px}
+</style>
 
 
 
@@ -544,7 +547,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 });
 </script>
 </div> <!-- /content -->
-<script>var lightboxQuarto = GLightbox({"loop":false,"openEffect":"zoom","selector":".lightbox","descPosition":"bottom","closeEffect":"zoom"});
+<script>var lightboxQuarto = GLightbox({"descPosition":"bottom","openEffect":"zoom","closeEffect":"zoom","selector":".lightbox","loop":false});
 window.onload = () => {
   lightboxQuarto.on('slide_before_load', (data) => {
     const { slideIndex, slideNode, slideConfig, player, trigger } = data;

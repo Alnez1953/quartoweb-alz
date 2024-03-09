@@ -84,3 +84,9 @@ lightbox: true
 :::
 
 ![](images/IMG_3136.png){group="Street"}
+
+```{=html}
+<style>
+p {text-indent: 0px}
+</style>
+```

@@ -30,3 +30,9 @@ lightbox: true
 
 ![](images/IMG_3651_01.png){group="Doubles"}
 :::
+
+```{=html}
+<style>
+p {text-indent: 0px}
+</style>
+```

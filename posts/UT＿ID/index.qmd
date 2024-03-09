@@ -42,3 +42,9 @@ lightbox: true
 
 ![](images/IMG_1786.png){group="UT/ID"}
 :::
+
+```{=html}
+<style>
+p {text-indent: 0px}
+</style>
+```

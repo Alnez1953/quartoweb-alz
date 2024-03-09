@@ -28,3 +28,7 @@ lightbox: true
 :::
 
 ![](images/3667.jpg){group="B&W"}
+
+<style>
+p {text-indent: 0px}
+</style>

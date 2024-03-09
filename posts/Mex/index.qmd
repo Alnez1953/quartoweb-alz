@@ -34,3 +34,9 @@ lightbox: true
 
 ![](images/DSCF1236.png){group="Mexico"}
 :::
+
+```{=html}
+<style>
+p {text-indent: 0px}
+</style>
+```

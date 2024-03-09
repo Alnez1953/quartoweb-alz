@@ -91,7 +91,7 @@ p {
   text-indent: 40px;
 }
 
-p.card-img-top {
+.card-img-top {
   color: #DBDBDB;
   text-indent: 0px;
 }
