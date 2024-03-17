@@ -5,15 +5,15 @@ image: 0844.png
 lightbox: true
 ---
 
-![](images/IMG_0844.png){group="Animals"}
+![](images/IMG_0844.jpg){group="Animals"}
 
 ::: {layout="[1,1]"}
-![](images/IMG_3099.png){group="Animals"}
+![](images/IMG_3099.jpg){group="Animals"}
 
-![](images/IMG_3205.png){group="Animals"}
+![](images/IMG_3205.jpg){group="Animals"}
 :::
 
-![](images/IMG_3820.png){group="Animals"}
+![](images/IMG_3820.jpg){group="Animals"}
 
 ```{=html}
 <style>

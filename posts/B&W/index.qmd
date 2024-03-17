@@ -6,29 +6,31 @@ lightbox: true
 ---
 
 ::: {layout="[1,1]"}
-![](images/3713.jpg){group="B&W"}
+![](images/IMG_3713_01.jpg){group="B&W"}
 
-![](images/4207.jpg){group="B&W"}
+![](images/IMG_4207.jpg){group="B&W"}
 
 ![](images/park.JPG){group="B&W"}
 
-![](images/3646.jpg){group="B&W"}
+![](images/IMG_3646.jpg){group="B&W"}
 
-![](images/4112.jpg){group="B&W"}
+![](images/IMG_4112.jpg){group="B&W"}
 
-![](images/4183.jpg){group="B&W"}
+![](images/IMG_4183.jpg){group="B&W"}
 
-![](images/3642.jpg){group="B&W"}
+![](images/IMG_3642.jpg){group="B&W"}
 
-![](images/4241.jpg){group="B&W"}
+![](images/IMG_4241.jpg){group="B&W"}
 
-![](images/4085.jpg){group="B&W"}
+![](images/IMG_4085.jpg){group="B&W"}
 
-![](images/1732.png){group="B&W"}
+![](images/IMG_1732_01.jpg){group="B&W"}
 :::
 
-![](images/3667.jpg){group="B&W"}
+![](images/IMG_3667.jpg){group="B&W"}
 
+```{=html}
 <style>
 p {text-indent: 0px}
 </style>
+```
