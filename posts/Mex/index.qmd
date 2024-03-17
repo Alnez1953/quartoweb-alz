@@ -6,33 +6,33 @@ lightbox: true
 ---
 
 ::: {layout="[1,1]"}
-![](images/DSCF1321.png){group="Mexico"}
+![](images/DSCF1321.jpg){group="Mexico"}
 
-![](images/DSCF1200.png){group="Mexico"}
+![](images/DSCF1200.jpg){group="Mexico"}
 :::
 
-![](images/DSCF1201.png)
+![](images/DSCF1201.jpg)
 
-![](images/DSCF1207.png)
+![](images/DSCF1207.jpg)
 
 ::: {layout="[1,1]"}
-![](images/DSCF1350.png){group="Mexico"}
+![](images/DSCF1350.jpg){group="Mexico"}
 
-![](images/DSCF1279.png){group="Mexico"}
+![](images/DSCF1279.jpg){group="Mexico"}
 :::
 
-![](images/DSCF1345.png)
+![](images/DSCF1345.jpg)
 
-![](images/DSCF1266.png)
+![](images/DSCF1266.jpg)
 
 ::: {layout="[1,1]"}
-![](images/DSCF1252.png){group="Mexico"}
+![](images/DSCF1252.jpg){group="Mexico"}
 
-![](images/DSCF1209.png){group="Mexico"}
+![](images/DSCF1209.jpg){group="Mexico"}
 
-![](images/DSCF1299.png){group="Mexico"}
+![](images/DSCF1299.jpg){group="Mexico"}
 
-![](images/DSCF1236.png){group="Mexico"}
+![](images/DSCF1236.jpg){group="Mexico"}
 :::
 
 ```{=html}

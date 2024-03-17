@@ -6,41 +6,41 @@ lightbox: true
 ---
 
 ::: {layout="[1,1]"}
-![](images/bus.png){group="UT/ID"}
+![](images/bus.jpg){group="UT/ID"}
 
-![](images/IMG_1605.png){group="UT/ID"}
+![](images/IMG_1605.jpg){group="UT/ID"}
 
-![](images/IMG_1337.png){group="UT/ID"}
+![](images/IMG_1337.jpg){group="UT/ID"}
 
-![](images/IMG_1334.png){group="UT/ID"}
+![](images/IMG_1334.jpg){group="UT/ID"}
 
-![](images/IMG_1368.png){group="UT/ID"}
+![](images/IMG_1368.jpg){group="UT/ID"}
 
-![](images/IMG_1401.png){group="UT/ID"}
+![](images/IMG_1401.jpg){group="UT/ID"}
 
-![](images/IMG_1472.png){group="UT/ID"}
+![](images/IMG_1472.jpg){group="UT/ID"}
 
-![](images/IMG_1427.png){group="UT/ID"}
+![](images/IMG_1427.jpg){group="UT/ID"}
 
-![](images/IMG_1480.png){group="UT/ID"}
+![](images/IMG_1480.jpg){group="UT/ID"}
 
-![](images/IMG_1496.png){group="UT/ID"}
+![](images/IMG_1496.jpg){group="UT/ID"}
 
-![](images/IMG_1511.png){group="UT/ID"}
+![](images/IMG_1511.jpg){group="UT/ID"}
 
-![](images/IMG_1579.png){group="UT/ID"}
+![](images/IMG_1579.jpg){group="UT/ID"}
 
-![](images/IMG_1640.png){group="UT/ID"}
+![](images/IMG_1640.jpg){group="UT/ID"}
 
-![](images/IMG_1685.png){group="UT/ID"}
+![](images/IMG_1685.jpg){group="UT/ID"}
 
-![](images/IMG_1689.png){group="UT/ID"}
+![](images/IMG_1689.jpg){group="UT/ID"}
 
-![](images/IMG_1697.png){group="UT/ID"}
+![](images/IMG_1697.jpg){group="UT/ID"}
 
-![](images/IMG_1782.png){group="UT/ID"}
+![](images/IMG_1782.jpg){group="UT/ID"}
 
-![](images/IMG_1786.png){group="UT/ID"}
+![](images/IMG_1786.jpg){group="UT/ID"}
 :::
 
 ```{=html}
