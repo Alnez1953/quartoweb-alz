@@ -12,18 +12,19 @@ library(tidyverse)
 library(dplyr)
 library(readr)
 library(ggplot2)
+knitr::opts_chunk$set(echo = TRUE, fig.width = 10, fig.height = 5)
 ```
 
 ```{r}
 dataVG <- read_csv("data.csv")
 dataVG <- dataVG %>% 
   select(Name, Platform, Metascore, Date, Title)
-#Sample of the data
-head(dataVG)
 
 dataVG_Fil <- transform(dataVG,"Platform_Frequency" = 
                         ave(seq(nrow(dataVG)), Platform, FUN = length)) %>% 
                         group_by(Platform)
+#Sample of dataframe
+head(dataVG_Fil)
 
 getmode <- function(v) {
    uniqv <- unique(v)
@@ -40,35 +41,59 @@ dataVG_Fil %>%
 ggplot(dataVG, aes(x = Platform)) +
          geom_bar() +
   scale_y_continuous(limits=c(0, 15), breaks = c(2,4,6,8,10,12,14)) +
+  geom_text(aes(label = after_stat(count)), stat = "count", vjust = 1.5, hjust = .5, color = "white", size= 3.2) +
   #Aesthetics and graph details.
   theme(
   panel.background = element_rect(fill = "white",
-                                colour = "white",
+                                color = "white",
                                 size = 0.25, linetype = 'solid'),
   panel.grid.major = element_line(size = 0.25, linetype = 'solid',
-                                colour = "black"), 
+                                color = "black"), 
   panel.grid.minor = element_line(size = 0.25, linetype = 'solid',
-                                colour = "black"),
+                                color = "black"),
   plot.background = element_rect(fill = "gray"),
   axis.text.x = element_text(face = "bold", color = "black", 
                              size=9, angle = 45,hjust=1),
   axis.text.y = element_text(face = "bold", color = "black", size=9, 
                              hjust=1), plot.title = 
   element_text(color = "black", size = 18, face = "bold", hjust = 0.5)) + 
-  labs(title = "Best Console", x = "Platforms", y = "Frequency")
+  labs(title = "Amount of Consoles", x = "Platforms", y = "Frequency")
 
 #graph created by comparing the values in both columns on the given dataset
-ggplot(dataVG, aes(y = Platform, x = Metascore, color = Metascore)) + 
-  geom_point(method = "lm") +
+ggplot(dataVG_Fil, aes(x = Platform_Frequency, y = Platform)) + 
+  geom_point() + geom_count() +
+  scale_x_continuous(limits=c(1, 15), breaks = c(1,3,5,7,9,11,13,15)) +
   #Aesthetics and graph details.
   theme(
   panel.background = element_rect(fill = "white",
-                                colour = "white",
+                                color = "white",
+                                size = 0.5, linetype = 'solid'),
+  panel.grid.major = element_line(size = 0.5, linetype = 'solid',
+                                color = "black"), 
+  panel.grid.minor = element_line(size = 0.5, linetype = 'solid',
+                                color = "black"),
+  plot.background = element_rect(fill = "gray"),
+  axis.text.x = element_text(face = "bold", color = "black", 
+                             size=9, angle = 0),
+  axis.text.y = element_text(face = "bold", color = "black", size=9, 
+                             hjust=1), plot.title = 
+  element_text(color = "black", size = 18, face = "bold", hjust = 0.5)) + 
+  labs(title = "Amount of Consoles", x = "Frequency", y = "Platforms")
+```
+
+```{r}
+#graph created by comparing the values in both columns on the given dataset
+ggplot(dataVG, aes(y = Platform, x = Metascore, color = Metascore)) + 
+  geom_point() + geom_count() +
+  #Aesthetics and graph details.
+  theme(
+  panel.background = element_rect(fill = "white",
+                                color = "white",
                                 size = 0.25, linetype = 'solid'),
   panel.grid.major = element_line(size = 0.25, linetype = 'dashed',
-                                colour = "black"), 
+                                color = "black"), 
   panel.grid.minor = element_line(size = 0.25, linetype = 'blank',
-                                colour = "black"),
+                                color = "black"),
   plot.background = element_rect(fill = "gray"),
   axis.text.x = element_text(face = "bold", color = "black", size=9),
   axis.text.y = element_text(face = "bold", color = "black",size=9), 
@@ -76,16 +101,3 @@ ggplot(dataVG, aes(y = Platform, x = Metascore, color = Metascore)) +
                 face = "bold", hjust = 0.5)) + 
   labs(title = "Best Console", x = "Metascore", y = "Platforms")
 ```
-
-```{r}
-dataVG_Fil %>% 
-  select(Name, Platform, Metascore , Date, Platform_Frequency) %>% 
-  group_by(Platform)
-#Sample of the filtered Data
-head(dataVG_Fil)
-
-ggplot(dataVG_Fil, aes(x = Platform_Frequency, y = Platform)) + 
-  geom_point() + geom_count(colour="Blue")
-```
-
-
