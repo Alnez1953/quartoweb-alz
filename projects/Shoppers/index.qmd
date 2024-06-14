@@ -1,7 +1,7 @@
 ---
 title: "Shoppers"
 categories: [Work in Progress]
-image: 3951.jpg
+image: 3951.JPG
 ---
 
 Analyzing...
@@ -12,7 +12,6 @@ library(tidyverse)
 library(dplyr)
 library(readr)
 library(ggplot2)
-library(vcd)
 knitr::opts_chunk$set(echo = TRUE, fig.width = 20, fig.height = 10)
 
 #Load CSV file

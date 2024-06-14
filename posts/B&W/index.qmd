@@ -1,7 +1,7 @@
 ---
 title: "Black and White"
 categories: [Black and White]
-image: park.jpg
+image: park.JPG
 lightbox: true
 ---
 

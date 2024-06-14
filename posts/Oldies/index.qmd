@@ -1,7 +1,7 @@
 ---
 title: "Oldies"
 categories: [Oldies]
-image: DSCN1143.jpg
+image: DSCN1143.JPG
 lightbox: true
 ---
 

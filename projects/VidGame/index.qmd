@@ -1,7 +1,7 @@
 ---
 title: "Exploratory: Best Video Game"
 categories: [Work in Progress]
-image: Nioh2.PNG
+image: Nioh2.png
 ---
 
 Analyzing...
