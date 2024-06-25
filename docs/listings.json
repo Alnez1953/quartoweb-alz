@@ -3,24 +3,24 @@
     "listing": "/projects.html",
     "items": [
       "/projects/Shoppers/index.html",
-      "/projects/VidGame/index.html",
-      "/projects/Anime/index.html"
+      "/projects/Anime/index.html",
+      "/projects/VidGame/index.html"
     ]
   },
   {
     "listing": "/images.html",
     "items": [
       "/posts/B&W/index.html",
+      "/posts/Animal/index.html",
+      "/posts/Line_Curve/index.html",
       "/posts/Street/index.html",
-      "/posts/Flora/index.html",
-      "/posts/Oldies/index.html",
-      "/posts/Japan/index.html",
       "/posts/Moon/index.html",
       "/posts/Mex/index.html",
-      "/posts/Line_Curve/index.html",
+      "/posts/Flora/index.html",
+      "/posts/UT＿ID/index.html",
+      "/posts/Oldies/index.html",
       "/posts/Macro/index.html",
-      "/posts/Animal/index.html",
-      "/posts/UT＿ID/index.html"
+      "/posts/Japan/index.html"
     ]
   }
 ]
