@@ -9,10 +9,10 @@ To be weird, strange; unknown to the masses, unrecognizable to most individuals,
 
 Most people have yet to sonder. Realize that everyone else has a life as vivid and complex as their own. So they become uninterested or unmotivated in getting to know an uncommon sight. ---We wonder about the thoughts of people we do not know, we weigh differences without waiting or watching, ask what we truly want? ---We are strange we sit on the sidelines simply pondering but not seeing ahead. Who isn't uncommon nowadays?
 
-When we were babies the world was painted, filled with color, as we grew, we were taught to paint a silhouette to all we didn't know, to all we didn't trust, this went on until we became a reflection of our own shadows, lost within our now black canvas, so from there we started a new. We didn't know who we were, we were strangers to ourselves, we didn't try to define, we usually left it for someone else to decide. We've since learned and have become someone we are proud to be, we look in the mirror and see the truth of our beings, now that we're free. Look to everyone around, past pains have always been our common ground! Reach out to another and you will see that strangers are worth it, just like you and me. 
+When we were babies the world was painted, filled with color, as we grew, we were taught to paint a silhouette to all we didn't know, to all we didn't trust, this went on until we became a reflection of our own shadows, lost within our now black canvas, so from there we started a new. We didn't know who we were, we were strangers to ourselves, we didn't try to define, we usually left it for someone else to decide. We've since learned and have become someone we are proud to be, we look in the mirror and see the truth of our beings, now that we're free. Look to everyone around, past pains have always been our common ground! Reach out to another and you will see that strangers are worth it, just like you and me.
 
-|                         | Different Links                                                   |                                        |
-|-------------------------|-------------------------------------------------------------------|----------------------------------------|
-| Name                    | Description                                                       | Link                                   |
+|   | Different Links |   |
+|----|----|----|
+| Name | Description | Link |
 | Japanese Hiragana/Kanji | Vocab and practice phrases I formatted in a way to help me study. | [Hiragana / Kanji](hiragana_kanji.qmd) |
-| Japanese Katakana       | Vocab I formatted in a way to help me study.                      | [Katakana](katakana.qmd)               |
+| Japanese Katakana | Vocab I formatted in a way to help me study. | [Katakana](katakana.qmd) |
