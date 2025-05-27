@@ -4,7 +4,7 @@ categories: [Work in Progress]
 image: Nioh2.png
 ---
 
-Analyzing...
+
 
 ```{r load-packages, include=FALSE}
 knitr::opts_chunk$set(warning = FALSE, message = FALSE) 
@@ -12,36 +12,39 @@ library(tidyverse)
 library(dplyr)
 library(readr)
 library(ggplot2)
-knitr::opts_chunk$set(echo = TRUE, fig.width = 10, fig.height = 5)
+knitr::opts_chunk$set(echo = TRUE, fig.width = 11.4, fig.height = 5)
 ```
 
-```{r}
-dataVG <- read_csv("data.csv")
-dataVG <- dataVG %>% 
-  select(Name, Platform, Metascore, Date, Title)
 
-dataVG_Fil <- transform(dataVG,"Platform_Frequency" = 
+
+```{r}
+dataVG <- read_csv("vgsales.csv")
+dataPlatformFreq <- dataVG %>% 
+  select(Name, Platform, Genre)
+
+dataPlatformFreq <- transform(dataPlatformFreq,"Platform_Frequency" = 
                         ave(seq(nrow(dataVG)), Platform, FUN = length)) %>% 
                         group_by(Platform)
-#Sample of dataframe
-head(dataVG_Fil)
+```
 
+
+
+```{r}
 getmode <- function(v) {
    uniqv <- unique(v)
    uniqv[which.max(tabulate(match(v, uniqv)))]
 }
 
-dataVG_Fil %>% 
-  summarise("Platform_Frequency" = getmode(Platform_Frequency), 
-            "Meta-Sum" = sum(Metascore),"Meta-Mean" = mean(Metascore))
-```
+data.frame(summarise(dataPlatformFreq, "--Frequency" = getmode(Platform_Frequency)))
 
-```{r}
+Below_dataPlatformFreq <- subset(dataPlatformFreq, subset = dataPlatformFreq$Platform_Frequency <= 250)
+Above_dataPlatformFreq <- subset(dataPlatformFreq, subset = dataPlatformFreq$Platform_Frequency >= 250)
+
+
 #graph created by comparing the values in both columns on the given dataset
-ggplot(dataVG, aes(x = Platform)) +
+ggplot(Above_dataPlatformFreq, aes(x = Platform, color = Genre)) +
          geom_bar() +
-  scale_y_continuous(limits=c(0, 15), breaks = c(2,4,6,8,10,12,14)) +
-  geom_text(aes(label = after_stat(count)), stat = "count", vjust = 1.5, hjust = .5, color = "white", size= 3.2) +
+  scale_y_continuous() +
   #Aesthetics and graph details.
   theme(
   panel.background = element_rect(fill = "white",
@@ -60,44 +63,50 @@ ggplot(dataVG, aes(x = Platform)) +
   labs(title = "Amount of Consoles", x = "Platforms", y = "Frequency")
 
 #graph created by comparing the values in both columns on the given dataset
-ggplot(dataVG_Fil, aes(x = Platform_Frequency, y = Platform)) + 
-  geom_point() + geom_count() +
-  scale_x_continuous(limits=c(1, 15), breaks = c(1,3,5,7,9,11,13,15)) +
-  #Aesthetics and graph details.
-  theme(
-  panel.background = element_rect(fill = "white",
-                                color = "white",
-                                size = 0.5, linetype = 'solid'),
-  panel.grid.major = element_line(size = 0.5, linetype = 'solid',
-                                color = "black"), 
-  panel.grid.minor = element_line(size = 0.5, linetype = 'solid',
-                                color = "black"),
-  plot.background = element_rect(fill = "gray"),
-  axis.text.x = element_text(face = "bold", color = "black", 
-                             size=9, angle = 0),
-  axis.text.y = element_text(face = "bold", color = "black", size=9, 
-                             hjust=1), plot.title = 
-  element_text(color = "black", size = 18, face = "bold", hjust = 0.5)) + 
-  labs(title = "Amount of Consoles", x = "Frequency", y = "Platforms")
-```
-
-```{r}
-#graph created by comparing the values in both columns on the given dataset
-ggplot(dataVG, aes(y = Platform, x = Metascore, color = Metascore)) + 
-  geom_point() + geom_count() +
+ggplot(Below_dataPlatformFreq, aes(x = Platform, color = Genre)) +
+         geom_bar() +
+  scale_y_continuous() +
   #Aesthetics and graph details.
   theme(
   panel.background = element_rect(fill = "white",
                                 color = "white",
                                 size = 0.25, linetype = 'solid'),
-  panel.grid.major = element_line(size = 0.25, linetype = 'dashed',
+  panel.grid.major = element_line(size = 0.25, linetype = 'solid',
                                 color = "black"), 
-  panel.grid.minor = element_line(size = 0.25, linetype = 'blank',
+  panel.grid.minor = element_line(size = 0.25, linetype = 'solid',
                                 color = "black"),
   plot.background = element_rect(fill = "gray"),
-  axis.text.x = element_text(face = "bold", color = "black", size=9),
-  axis.text.y = element_text(face = "bold", color = "black",size=9), 
-                plot.title = element_text(color = "black", size = 18,
-                face = "bold", hjust = 0.5)) + 
-  labs(title = "Best Console", x = "Metascore", y = "Platforms")
+  axis.text.x = element_text(face = "bold", color = "black", 
+                             size=9, angle = 45,hjust=1),
+  axis.text.y = element_text(face = "bold", color = "black", size=9, 
+                             hjust=1), plot.title = 
+  element_text(color = "black", size = 18, face = "bold", hjust = 0.5)) + 
+  labs(title = "Amount of Consoles", x = "Platforms", y = "Frequency")
+```
+
+
+
+```{r}
+#graph created by comparing the values in both columns on the given dataset
+ggplot(dataVG, aes(x = Genre)) +
+         geom_bar() + 
+  scale_y_continuous() +
+  geom_text(aes(label = after_stat(count)), stat = "count", vjust = 1.5, hjust = .5, color = "yellow", size= 3.2) +
+  #Aesthetics and graph details.
+  theme( 
+  panel.background = element_rect(fill = "white",
+                                color = "white",
+                                size = 0.25, linetype = 'solid'), 
+  panel.grid.major = element_line(size = 0.25, linetype = 'solid',
+                                color = "black"), 
+  panel.grid.minor = element_line(size = 0.25, linetype = 'solid',
+                                color = "yellow"),
+  plot.background = element_rect(fill = "gray"),
+  axis.text.x = element_text(face = "bold", color = "red", 
+                             size=9, angle = 45,hjust=1),
+  axis.text.y = element_text(face = "bold", color = "red", size=9, 
+                             hjust=1), plot.title = 
+  element_text(color = "blue", size = 18, face = "bold", hjust = 0.5)) + 
+  labs(title = "Amount of Consoles in the Data", x = "Platforms", y = "Frequency")
+
 ```
