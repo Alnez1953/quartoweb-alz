@@ -1,13 +1,5 @@
 [
   {
-    "listing": "/projects.html",
-    "items": [
-      "/projects/Anime/index.html",
-      "/projects/VidGame/index.html",
-      "/projects/Shoppers/index.html"
-    ]
-  },
-  {
     "listing": "/images.html",
     "items": [
       "/posts/Animal/index.html",
@@ -21,6 +13,14 @@
       "/posts/Japan/index.html",
       "/posts/UT＿ID/index.html",
       "/posts/Street/index.html"
+    ]
+  },
+  {
+    "listing": "/projects.html",
+    "items": [
+      "/projects/Anime/index.html",
+      "/projects/VidGame/index.html",
+      "/projects/Shoppers/index.html"
     ]
   }
 ]
