@@ -99,7 +99,7 @@ min_dataPlatformFreq <- subset(dataPlatformFreq, subset = dataPlatformFreq$Platf
 #graph created by comparing the values in both columns on the given dataset
 ggplot(min_dataPlatformFreq, aes(x = Platform, color = Genre)) +
          geom_bar() +
-  scale_y_continuous() +
+  scale_y_continuous(limits=c(0, 12), breaks = c(0,3,6,9,12)) +
   #Aesthetics and graph details.
   theme(
   panel.background = element_rect(fill = "black",
