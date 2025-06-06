@@ -1,10 +1,8 @@
 ---
-title: "Exploratory: Best Video Game"
+title: "Exploratory: 'Best' Video Game"
 categories: [Work in Progress]
 image: Nioh2.png
 ---
-
-
 
 ```{r load-packages, include=FALSE}
 knitr::opts_chunk$set(warning = FALSE, message = FALSE) 
@@ -15,32 +13,37 @@ library(ggplot2)
 knitr::opts_chunk$set(echo = TRUE, fig.width = 11.4, fig.height = 5)
 ```
 
+When it comes to hobbies, few would rank above video games. The synergistic mix of audio and visual design give it the most amount of versatility. From casual single screen puzzle games to open world, story rich experiences that give the player freedom to decide how they'd like to enjoy it. The data I'm working with is titled <b><i> Video Game Sales </i></b> from Gregory Smith in [kaggle](https://www.kaggle.com/datasets/gregorut/videogamesales), it compiles sales data from more than 16,500 games. 
 
+With it I will attempt to answer a couple of questions: <br>
+What is the best video game? Dependent on region? Dependent on console? Dependent on genre?
+
+There are many different ways to classify a game as 'good' many of which are not included in the data, this isn't going to be a commentary of the quality of these games, just their commercial success. Several of these titles were sold multiple consoles, their sales would the total between them. 
 
 ```{r}
 dataVG <- read_csv("vgsales.csv")
 dataPlatformFreq <- dataVG %>% 
-  select(Name, Platform, Genre)
+  select(Name, Platform, Genre, Global_Sales)
 
 dataPlatformFreq <- transform(dataPlatformFreq,"Platform_Frequency" = 
                         ave(seq(nrow(dataVG)), Platform, FUN = length)) %>% 
                         group_by(Platform)
-```
 
-
-
-```{r}
 getmode <- function(v) {
    uniqv <- unique(v)
    uniqv[which.max(tabulate(match(v, uniqv)))]
 }
-
-data.frame(summarise(dataPlatformFreq, "--Frequency" = getmode(Platform_Frequency)))
 ```
 
+After cleaning the data a bit we could compile the unique values under "Platform" to show how many games are in the data with respect to their platform. We could also calculate the total (millions) of sales those games had.
 
+```{r echo=FALSE}
+arrange(data.frame(summarise(dataPlatformFreq, "--Total_Games" = getmode(Platform_Frequency), "--Total_Global_Sales" = sum(Global_Sales))), desc(X..Total_Games))
+```
 
-```{r}
+Above, I thought it necessary for clarity to see the data in descending order with respect to the total amount of titles per console in the data set. As you would notice, there is a large difference between the amount of games some consoles. To mediate this graphically I separated the data into three sections, above 250, below 250 but above 25, and below 25. 
+
+```{r echo=FALSE}
 above_dataPlatformFreq <- subset(dataPlatformFreq, subset = dataPlatformFreq$Platform_Frequency >= 250)
 
 #graph created by comparing the values in both columns on the given dataset
@@ -65,9 +68,7 @@ ggplot(above_dataPlatformFreq, aes(x = Platform, color = Genre)) +
   labs(title = "Console Frequency")
 ```
 
-
-
-```{r}
+```{r echo=FALSE}
 below_dataPlatformFreq <- subset(dataPlatformFreq, subset = dataPlatformFreq$Platform_Frequency <= 250)
 below_dataPlatformFreq <- subset(below_dataPlatformFreq, subset = below_dataPlatformFreq$Platform_Frequency >= 25)
 
@@ -93,7 +94,7 @@ ggplot(below_dataPlatformFreq, aes(x = Platform, color = Genre)) +
   labs(title = "Console Frequency")
 ```
 
-```{r}
+```{r echo=FALSE}
 min_dataPlatformFreq <- subset(dataPlatformFreq, subset = dataPlatformFreq$Platform_Frequency <= 25)
 
 #graph created by comparing the values in both columns on the given dataset
@@ -118,10 +119,7 @@ ggplot(min_dataPlatformFreq, aes(x = Platform, color = Genre)) +
   labs(title = "Console Frequency")
 ```
 
-
-
-
-```{r}
+```{r echo=FALSE}
 #graph created by comparing the values in both columns on the given dataset
 ggplot(dataVG, aes(x = Genre)) +
          geom_bar() + 
