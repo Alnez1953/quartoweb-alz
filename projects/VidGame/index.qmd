@@ -15,7 +15,7 @@ knitr::opts_chunk$set(echo = TRUE, fig.width = 11.4, fig.height = 5)
 
 When it comes to hobbies, few would rank above video games. The synergistic mix of audio and visual design give it the most amount of versatility. From casual single screen puzzle games to open world, story rich experiences that give the player freedom to decide how they'd like to enjoy it. The data I'm working with is titled <b><i> Video Game Sales </i></b> from Gregory Smith in [kaggle](https://www.kaggle.com/datasets/gregorut/videogamesales), it compiles sales data from more than 16,500 games. 
 
-With it I will attempt to answer a couple of questions: <br>
+With it I will attempt to answer a couple of questions: <br> 
 What is the best video game? Dependent on region? Dependent on console? Dependent on genre?
 
 There are many different ways to classify a game as 'good' many of which are not included in the data, this isn't going to be a commentary of the quality of these games, just their commercial success. Several of these titles were sold multiple consoles, their sales would the total between them. 
