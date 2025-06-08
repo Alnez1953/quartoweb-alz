@@ -3,29 +3,30 @@ title: "Mexico"
 categories: [Mex, Landscapes]
 image: igualdad.png
 lightbox: true
+page-layout: article
 ---
 
-::: {layout="[1,1]"}
+
 ![](images/DSCF1321.jpg){group="Mexico"}
 
 ![](images/DSCF1200.jpg){group="Mexico"}
-:::
+
 
 ![](images/DSCF1201.jpg)
 
 ![](images/DSCF1207.jpg)
 
-::: {layout="[1,1]"}
+
 ![](images/DSCF1350.jpg){group="Mexico"}
 
 ![](images/DSCF1279.jpg){group="Mexico"}
-:::
+
 
 ![](images/DSCF1345.jpg)
 
 ![](images/DSCF1266.jpg)
 
-::: {layout="[1,1]"}
+
 ![](images/DSCF1252.jpg){group="Mexico"}
 
 ![](images/DSCF1209.jpg){group="Mexico"}
@@ -33,7 +34,7 @@ lightbox: true
 ![](images/DSCF1299.jpg){group="Mexico"}
 
 ![](images/DSCF1236.jpg){group="Mexico"}
-:::
+
 
 ```{=html}
 <style>

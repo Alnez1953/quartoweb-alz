@@ -2,6 +2,7 @@
 title: "Photography"
 listing:
   contents: posts
+  max-description-length: 1
   sort: "date desc"
   type: grid
   categories: false

@@ -3,15 +3,15 @@ title: "Flora"
 categories: [Flora]
 image: IMG_3228.png
 lightbox: true
+page-layout: article
 ---
 
 ![](images/IMG_2593.jpg){group="Flora"}
 
-::: {layout="[1,1]"}
 ![](images/IMG_3228.jpg){group="Flora"}
 
 ![](images/IMG_2563.jpg){group="Flora"}
-:::
+
 
 ```{=html}
 <style>

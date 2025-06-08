@@ -3,11 +3,11 @@ title: "Oldies"
 categories: [Oldies]
 image: DSCN1143.JPG
 lightbox: true
+page-layout: article
 ---
 
 ![](images/DSCN1050.JPG){group="Oldies"}
 
-::: {layout="[1,1]"}
 ![](images/DSCN0857.JPG){group="Oldies"}
 
 ![](images/DSCN0532.JPG){group="Oldies"}
@@ -103,7 +103,6 @@ lightbox: true
 ![](images/DSCN0898.JPG){group="Oldies"}
 
 ![](images/DSCN1331.JPG){group="Oldies"}
-:::
 
 ![](images/DSCN0272.JPG){group="Oldies"}
 

@@ -2,7 +2,6 @@
 title: "Projects"
 listing:
   contents: projects
-  max-description-length: 12
   feed: false
   sort: "date desc"
   type: grid

@@ -3,9 +3,9 @@ title: "Street"
 categories: [Street]
 image: 2476.png
 lightbox: true
+page-layout: article
 ---
 
-::: {layout="[1,1]"}
 ![](images/IMG_2476.jpg){group="Street"}
 
 ![](images/IMG_3047.jpg){group="Street"}
@@ -81,7 +81,6 @@ lightbox: true
 ![](images/IMG_3124.jpg){group="Street"}
 
 ![](images/IMG_2882.jpg){group="Street"}
-:::
 
 ![](images/IMG_3136.jpg){group="Street"}
 

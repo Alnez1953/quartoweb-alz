@@ -3,9 +3,10 @@ title: "Line_Curve Shinanigans"
 categories: [LineCurve]
 image: IMG_1351.png
 lightbox: true
+page-layout: article
 ---
 
-::: {layout="[1,1]"}
+
 ![](images/IMG_1351.jpg){group="LC"}
 
 ![](images/IMG_1391.jpg){group="LC"}
@@ -17,7 +18,7 @@ lightbox: true
 ![](images/IMG_1380.jpg){group="LC"}
 
 ![](images/IMG_2149.jpg){group="LC"}
-:::
+
 
 ```{=html}
 <style>

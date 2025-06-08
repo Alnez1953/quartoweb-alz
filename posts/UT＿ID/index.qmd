@@ -3,9 +3,9 @@ title: "Utah/Idaho"
 categories: [UT/ID, Landscapes]
 image: 1337.png
 lightbox: true
+page-layout: article
 ---
 
-::: {layout="[1,1]"}
 ![](images/bus.jpg){group="UT/ID"}
 
 ![](images/IMG_1605.jpg){group="UT/ID"}
@@ -41,8 +41,6 @@ lightbox: true
 ![](images/IMG_1782.jpg){group="UT/ID"}
 
 ![](images/IMG_1786.jpg){group="UT/ID"}
-:::
-
 ```{=html}
 <style>
 p {text-indent: 0px}

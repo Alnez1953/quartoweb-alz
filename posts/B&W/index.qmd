@@ -3,9 +3,10 @@ title: "Black and White"
 categories: [Black and White]
 image: park.JPG
 lightbox: true
+page-layout: article
 ---
 
-::: {layout="[1,1]"}
+
 ![](images/IMG_3713_01.jpg){group="B&W"}
 
 ![](images/IMG_4207.jpg){group="B&W"}
@@ -25,7 +26,6 @@ lightbox: true
 ![](images/IMG_4085.jpg){group="B&W"}
 
 ![](images/IMG_1732_01.jpg){group="B&W"}
-:::
 
 ![](images/IMG_3667.jpg){group="B&W"}
 

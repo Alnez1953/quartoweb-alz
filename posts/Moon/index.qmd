@@ -3,13 +3,12 @@ title: "Moon"
 categories: [Moon]
 image: IMG_1298.png
 lightbox: true
+page-layout: article
 ---
 
-::: {layout="[1,1]"}
 ![](images/IMG_1297.jpg){group="Moon"}
 
 ![](images/IMG_1298.jpg){group="Moon"}
-:::
 
 ```{=html}
 <style>

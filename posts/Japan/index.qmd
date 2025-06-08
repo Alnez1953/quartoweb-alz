@@ -3,9 +3,10 @@ title: "Japan"
 categories: [Japan, Landscapes]
 image: IMG_3747.png
 lightbox: true
+page-layout: article
 ---
 
-::: {layout="[1,1]"}
+
 ![](images/IMG_3747.jpg){group="JP"}
 
 ![](images/IMG_3793_01.jpg){group="JP"}
@@ -13,7 +14,6 @@ lightbox: true
 ![](images/IMG_3751.jpg){group="JP"}
 
 ![](images/IMG_3689.jpg){group="JP"}
-:::
 
 ![](images/IMG_3746.jpg){group="JP"}
 

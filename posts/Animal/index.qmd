@@ -3,15 +3,14 @@ title: "Animals"
 categories: [Animals]
 image: 0844.png
 lightbox: true
+page-layout: article
 ---
 
 ![](images/IMG_0844.jpg){group="Animals"}
 
-::: {layout="[1,1]"}
 ![](images/IMG_3099.jpg){group="Animals"}
 
 ![](images/IMG_3205.jpg){group="Animals"}
-:::
 
 ![](images/IMG_3820.jpg){group="Animals"}
 
