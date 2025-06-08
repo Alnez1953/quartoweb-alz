@@ -15,7 +15,7 @@ knitr::opts_chunk$set(echo = TRUE, fig.width = 11.4, fig.height = 5)
 
 When it comes to hobbies, few would rank above video games. The synergistic mix of audio and visual design give it the most amount of versatility. From casual single screen puzzle games to open world, story rich experiences that give the player freedom to decide how they'd like to enjoy it. The data I'm working with is titled <b><i> Video Game Sales </i></b> from Gregory Smith in [kaggle](https://www.kaggle.com/datasets/gregorut/videogamesales), it compiles sales data from more than 16,500 games.
 
-With it I will attempt to answer a couple of questions: <br> What is the best video game? Dependent on region? Dependent on console? Dependent on genre?
+With it I will attempt to answer a couple of questions: <br> What is the best video game? Dependent on console? Dependent on genre?
 
 There are many different ways to classify a game as 'good' many of which are not included in the data, this isn't going to be a commentary of the quality of these games, just their commercial success. Several of these titles were sold multiple consoles, their sales would the total between them.
 
@@ -34,10 +34,10 @@ getmode <- function(v) {
 }
 ```
 
-After cleaning the data a bit we could compile the unique values under "Platform" to show how many games are in the data with respect to their platform. We could also calculate the total (millions) of sales those games had.
+After cleaning the data a bit we could compile the unique values under "Platform" to show how many games are in the data with respect to their platform. We could also calculate the total (millions) of sales those games had. Realistically since I'm simplifying my goal to find the 'best' I' shouldn't limit myself to the various regions the data provides, such that I'm not taking into consideration the most sold in the individual regions the data has (North America, European Union, Japan), Global Sales are the most important to me in this exploratory analysis.
 
 ```{r echo=FALSE}
-arrange(data.frame(summarise(dataPlatformFreq, "--Total_Games" = getmode(Platform_Frequency), "--Total_Global_Sales" = sum(Global_Sales))), desc(X..Total_Games))
+arrange(as.data.frame(summarise(dataPlatformFreq, "...Total_Games" = getmode(Platform_Frequency), "...Total_Global_Sales" = sum(Global_Sales))), desc(...Total_Games)) 
 ```
 
 Above, I thought it necessary for clarity to see the data in descending order with respect to the total amount of titles per console in the data set. As you would notice, there is a large difference between the quantity of titles the consoles have. To mediate this graphically I separated the data into three sections, above 250, below 250 but above 25, and below 25 games.
@@ -67,6 +67,8 @@ ggplot(above_dataPlatformFreq, aes(x = Platform, color = Genre)) +
   labs(title = "Console Frequency")
 ```
 
+
+
 ```{r echo=FALSE}
 below_dataPlatformFreq <- subset(dataPlatformFreq, subset = dataPlatformFreq$Platform_Frequency <= 250)
 below_dataPlatformFreq <- subset(below_dataPlatformFreq, subset = below_dataPlatformFreq$Platform_Frequency >= 25)
@@ -93,6 +95,8 @@ ggplot(below_dataPlatformFreq, aes(x = Platform, color = Genre)) +
   labs(title = "Console Frequency")
 ```
 
+
+
 ```{r echo=FALSE}
 min_dataPlatformFreq <- subset(dataPlatformFreq, subset = dataPlatformFreq$Platform_Frequency <= 25)
 
@@ -118,6 +122,14 @@ ggplot(min_dataPlatformFreq, aes(x = Platform, color = Genre)) +
   labs(title = "Console Frequency")
 ```
 
+
+
+```{r echo=FALSE}
+dataPlatformFreq %>% select(Name, "...Platform" = Platform, "...Global Sales" = Global_Sales) %>% slice_head() %>% as.data.frame()
+```
+
+
+
 ```{r echo=FALSE}
 #graph created by comparing the values in both columns on the given dataset
 ggplot(dataVG, aes(x = Genre)) +
@@ -141,3 +153,10 @@ ggplot(dataVG, aes(x = Genre)) +
   element_text(color = "blue", size = 18, face = "bold", hjust = 0.5)) + 
   labs(title = "Genre Frequency")
 ```
+
+
+
+```{r echo=FALSE}
+dataVG %>% group_by(Genre) %>% select(Name, "...Genre" = Genre, "...Global Sales" = Global_Sales) %>% slice_head() %>% as.data.frame()
+```
+

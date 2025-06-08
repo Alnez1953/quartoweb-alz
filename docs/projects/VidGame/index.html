@@ -171,7 +171,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 
 <p>When it comes to hobbies, few would rank above video games. The synergistic mix of audio and visual design give it the most amount of versatility. From casual single screen puzzle games to open world, story rich experiences that give the player freedom to decide how they’d like to enjoy it. The data I’m working with is titled <b><i> Video Game Sales </i></b> from Gregory Smith in <a href="https://www.kaggle.com/datasets/gregorut/videogamesales">kaggle</a>, it compiles sales data from more than 16,500 games.</p>
-<p>With it I will attempt to answer a couple of questions: <br> What is the best video game? Dependent on region? Dependent on console? Dependent on genre?</p>
+<p>With it I will attempt to answer a couple of questions: <br> What is the best video game? Dependent on console? Dependent on genre?</p>
 <p>There are many different ways to classify a game as ‘good’ many of which are not included in the data, this isn’t going to be a commentary of the quality of these games, just their commercial success. Several of these titles were sold multiple consoles, their sales would the total between them.</p>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>dataVG <span class="ot">&lt;-</span> <span class="fu">read_csv</span>(<span class="st">"vgsales.csv"</span>)</span>
@@ -187,10 +187,10 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a>   uniqv[<span class="fu">which.max</span>(<span class="fu">tabulate</span>(<span class="fu">match</span>(v, uniqv)))]</span>
 <span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a>}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<p>After cleaning the data a bit we could compile the unique values under “Platform” to show how many games are in the data with respect to their platform. We could also calculate the total (millions) of sales those games had.</p>
+<p>After cleaning the data a bit we could compile the unique values under “Platform” to show how many games are in the data with respect to their platform. We could also calculate the total (millions) of sales those games had. Realistically since I’m simplifying my goal to find the ‘best’ I’ shouldn’t limit myself to the various regions the data provides, such that I’m not taking into consideration the most sold in the individual regions the data has (North America, European Union, Japan), Global Sales are the most important to me in this exploratory analysis.</p>
 <div class="cell">
 <div class="cell-output cell-output-stdout">
-<pre><code>   Platform X..Total_Games X..Total_Global_Sales
+<pre><code>   Platform ...Total_Games ...Total_Global_Sales
 1        DS           2163                822.49
 2       PS2           2161               1255.64
 3       PS3           1329                957.84
@@ -253,12 +253,65 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 </div>
 <div class="cell">
+<div class="cell-output cell-output-stdout">
+<pre><code>                                     Name ...Platform ...Global Sales
+1                                 Pac-Man        2600            7.81
+2                             Policenauts         3DO            0.06
+3                     Pokemon X/Pokemon Y         3DS           14.35
+4                         Sonic Adventure          DC            2.42
+5                   New Super Mario Bros.          DS           30.01
+6                Pokemon Red/Pokemon Blue          GB           31.37
+7           Pokemon Ruby/Pokemon Sapphire         GBA           15.85
+8                 Super Smash Bros. Melee          GC            7.07
+9                    Sonic the Hedgehog 2         GEN            6.03
+10           Sonic the Hedgehog 2 (8-bit)          GG            0.04
+11                         Super Mario 64         N64           11.89
+12                      Super Mario Bros.         NES           40.24
+13                     Samurai Shodown II          NG            0.25
+14                             The Sims 3          PC            8.11
+15     Blue Breaker: Ken Yorimo Hohoemi o        PCFX            0.03
+16                           Gran Turismo          PS           10.95
+17          Grand Theft Auto: San Andreas         PS2           20.81
+18                     Grand Theft Auto V         PS3           21.40
+19              Call of Duty: Black Ops 3         PS4           14.24
+20 Grand Theft Auto: Liberty City Stories         PSP            7.72
+21                              Minecraft         PSV            2.25
+22                       Virtua Fighter 2         SAT            1.93
+23                               Sonic CD         SCD            1.50
+24                      Super Mario World        SNES           20.61
+25                             Doukyuusei        TG16            0.14
+26                          Final Fantasy          WS            0.51
+27                             Wii Sports         Wii           82.74
+28                           Mario Kart 8        WiiU            6.96
+29                     Kinect Adventures!        X360           21.82
+30                                 Halo 2          XB            8.49
+31              Call of Duty: Black Ops 3        XOne            7.30</code></pre>
+</div>
+</div>
+<div class="cell">
 <div class="cell-output-display">
 <div>
 <figure class="figure">
-<p><img src="index_files/figure-html/unnamed-chunk-6-1.png" class="img-fluid figure-img" width="1094"></p>
+<p><img src="index_files/figure-html/unnamed-chunk-7-1.png" class="img-fluid figure-img" width="1094"></p>
 </figure>
 </div>
+</div>
+</div>
+<div class="cell">
+<div class="cell-output cell-output-stdout">
+<pre><code>                                 Name     ...Genre ...Global Sales
+1                  Grand Theft Auto V       Action           21.40
+2  Super Mario Land 2: 6 Golden Coins    Adventure           11.18
+3             Super Smash Bros. Brawl     Fighting           13.04
+4                            Wii Play         Misc           29.02
+5                   Super Mario Bros.     Platform           40.24
+6                              Tetris       Puzzle           30.26
+7                      Mario Kart Wii       Racing           35.82
+8            Pokemon Red/Pokemon Blue Role-Playing           31.37
+9                           Duck Hunt      Shooter           28.31
+10                         Nintendogs   Simulation           24.76
+11                         Wii Sports       Sports           82.74
+12                    Pokemon Stadium     Strategy            5.45</code></pre>
 </div>
 </div>
 
