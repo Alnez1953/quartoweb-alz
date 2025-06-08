@@ -1,6 +1,6 @@
 ---
 title: "Exploratory: 'Best' Video Game"
-categories: [Work in Progress]
+categories: [Games, Genre]
 image: Nioh2.png
 ---
 
@@ -64,7 +64,7 @@ ggplot(above_dataPlatformFreq, aes(x = Platform, color = Genre)) +
   axis.text.y = element_text(face = "bold", color = "white", size=9, 
                              hjust=1), plot.title = 
   element_text(color = "blue", size = 18, face = "bold", hjust = 0.5)) + 
-  labs(title = "Console Frequency")
+  labs(title = "Games with respect to Console (1)")
 ```
 
 
@@ -92,7 +92,7 @@ ggplot(below_dataPlatformFreq, aes(x = Platform, color = Genre)) +
   axis.text.y = element_text(face = "bold", color = "white", size=9, 
                              hjust=1), plot.title = 
   element_text(color = "blue", size = 18, face = "bold", hjust = 0.5)) + 
-  labs(title = "Console Frequency")
+  labs(title = "Games with respect to Console (2)")
 ```
 
 
@@ -119,16 +119,19 @@ ggplot(min_dataPlatformFreq, aes(x = Platform, color = Genre)) +
   axis.text.y = element_text(face = "bold", color = "white", size=9, 
                              hjust=1), plot.title = 
   element_text(color = "blue", size = 18, face = "bold", hjust = 0.5)) + 
-  labs(title = "Console Frequency")
+  labs(title = "Games with respect to Console (3)")
 ```
 
+I decided to include the Genre 'amount' in the graphs above to get a general idea of which categories are more prominent for each console. Genre's would have a dedicated graph later on.
 
+Lets now get what we would call the "best" game with respect to consoles: <br>
+Many of these titles are exactly what you'd expect, Super Mario Bros. for the Nintendo Entertainment System (NES) and Pacman for the Atari 2600. Although there are some notable titles I wasn't expecting to find like Minecraft selling 2.25 million copies for the Playstation Vita (PSV). 
 
 ```{r echo=FALSE}
 dataPlatformFreq %>% select(Name, "...Platform" = Platform, "...Global Sales" = Global_Sales) %>% slice_head() %>% as.data.frame()
 ```
 
-
+The following graph shows how all the titles are distributed based on their genre.
 
 ```{r echo=FALSE}
 #graph created by comparing the values in both columns on the given dataset
@@ -154,7 +157,8 @@ ggplot(dataVG, aes(x = Genre)) +
   labs(title = "Genre Frequency")
 ```
 
-
+Lets now get what we would call the "best" game with respect to Genre: <br>
+Similar to the previous table an expected title to see is <i> Grand Theft Auto V </i> under Action. I would have considered the shooter category to go to one of the <i> Call of Duty </i> titles but I suppose that was my recency bias. <i>Duck Hunt</i> ends up being the most sold game for the "shooter" genre with 28.31 million copies sold globally.  
 
 ```{r echo=FALSE}
 dataVG %>% group_by(Genre) %>% select(Name, "...Genre" = Genre, "...Global Sales" = Global_Sales) %>% slice_head() %>% as.data.frame()
