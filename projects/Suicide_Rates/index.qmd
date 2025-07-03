@@ -1,0 +1,45 @@
+---
+title: "Suicide Rates"
+categories: [Work in Progress]
+image: 41.png
+---
+
+```{r include=FALSE}
+knitr::opts_chunk$set(warning = FALSE, message = FALSE) 
+library(tidyverse)
+library(dplyr)
+library(readr)
+library(ggplot2)
+knitr::opts_chunk$set(echo = TRUE, fig.width = 20, fig.height = 10)
+
+#Load CSV file
+sR <- read_csv("master.csv")
+```
+
+
+
+```{r echo=FALSE}
+listTodata <- split.data.frame(sR, sR$year)
+
+as.data.frame(listTodata$`1998`)
+
+ggplot(as.data.frame(listTodata$`1998`), aes(x=generation, y=suicides_no)) + geom_col()
+```
+
+
+
+```{r}
+
+```
+
+
+
+```{r}
+
+```
+
+
+
+```{r}
+
+```
