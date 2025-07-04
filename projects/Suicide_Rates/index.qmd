@@ -18,7 +18,7 @@ sR <- read_csv("master.csv")
 
 
 
-```{r echo=FALSE}
+```{r include=FALSE}
 listTodata <- split.data.frame(sR, sR$year)
 
 as.data.frame(listTodata$`1998`)
