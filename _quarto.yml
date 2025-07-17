@@ -9,16 +9,20 @@ website:
   navbar:
     right:
       
-      - href: about.qmd
+      - icon: arrow-right
+        href: about.qmd
         text: About
       
-      - href: projects.qmd
+      - icon: graph-up
+        href: projects.qmd
         text: Projects
         
-      - href: images.qmd
+      - icon: camera-fill
+        href: images.qmd
         text: Photography
         
-      - text: Games
+      - icon: controller
+        text: Games
         href: https://alnez.itch.io/
       
       - icon: github
@@ -33,7 +37,7 @@ website:
 format:
   html:
     page-layout: full
-    theme: darkly 
+    theme: cyborg
     css: styles.css
     toc: false
 

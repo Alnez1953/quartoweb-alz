@@ -13,6 +13,10 @@
   color: #8B7500;
 }
 
+.btn-group-horizontal {
+  text-align: center;
+}
+
 .header{
   font-size: 30px;
   text-align: center;
@@ -37,12 +41,27 @@
 }
 
 /* Changes Github logo to white in the navbar*/
-.bi.bi-github{
+.bi.bi-github {
   color: white;
 }
 
-/* Changes Youtube logo to white in the navbar*/
 .bi.bi-youtube{
+  color: white;
+}
+
+.bi.bi-controller{
+  color: white;
+}
+
+.bi.bi-camera-fill{
+  color: white;
+}
+
+.bi.bi-graph-up{
+  color: white;
+}
+
+.bi.bi-arrow-right{
   color: white;
 }
 
@@ -66,10 +85,6 @@ a:active{
   color: darkslategray;
 }
 
-body{
-  background-color: black;
-}
-
 h1 {
   color: #DBDBDB;
 }
@@ -82,12 +97,8 @@ h3 {
   color: #DBDBDB;
 }
 
-.table{
-  background-color: #303030;
-}
 
 p {
-  color: #DBDBDB;
   text-indent: 40px;
 }
 

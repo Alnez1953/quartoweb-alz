@@ -24,7 +24,7 @@ dataVG <- read_csv("vgsales.csv")
 dataPlatformFreq <- dataVG %>% 
   select(Name, Platform, Genre, Global_Sales)
 
-dataPlatformFreq <- transform(dataPlatformFreq,"Platform_Frequency" = 
+dataPlatformFreq <- mutate(dataPlatformFreq,"Platform_Frequency" = 
                         ave(seq(nrow(dataVG)), Platform, FUN = length)) %>% 
                         group_by(Platform)
 ```
