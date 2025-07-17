@@ -129,6 +129,45 @@ ul.task-list li input[type="checkbox"] {
 <p>To be weird, strange; unknown to the masses, unrecognizable to most individuals, could actually be a pretty good place to be. —You won’t have many chances to fail in the eyes of those you admire, and you’ll feel security with a small familiar surrounding. —The downside is, that you’ll never truly meet many people who could have made a difference, all because neither of you took the first step closer.</p>
 <p>Most people have yet to sonder. Realize that everyone else has a life as vivid and complex as their own. So they become uninterested or unmotivated in getting to know an uncommon sight. —We wonder about the thoughts of people we do not know, we weigh differences without waiting or watching, ask what we truly want? —We are strange we sit on the sidelines simply pondering but not seeing ahead. Who isn’t uncommon nowadays?</p>
 <p>When we were babies the world was painted, filled with color, as we grew, we were taught to paint a silhouette to all we didn’t know, to all we didn’t trust, this went on until we became a reflection of our own shadows, lost within our now black canvas, so from there we started a new. We didn’t know who we were, we were strangers to ourselves, we didn’t try to define, we usually left it for someone else to decide. We’ve since learned and have become someone we are proud to be, we look in the mirror and see the truth of our beings, now that we’re free. Look to everyone around, past pains have always been our common ground! Reach out to another and you will see that strangers are worth it, just like you and me.</p>
+<div class="btn">
+<button type="button" class="btn btn-primary btn-sm" onclick="randomQ()" id="btnID">Random Poem</button>
+</div>
+  <figure class="text-center figure" id="btnQTE">
+  <blockquote class="blockquote">
+    <p id="poetry"></p>
+  </blockquote>
+<figcaption class="blockquote-footer" id="poetryFooter">
+<cite title=""></cite>
+  </figcaption>
+<div class="btn">
+<button type="button" class="btn btn-primary btn-sm" onclick="hide()" id="btnID">Hide</button>
+</div>
+</figure>
+  <script>
+      function hide() {
+            document.getElementById('btnQTE')
+                .style.display = "none";
+        }
+      function randomQ() {
+            document.getElementById('btnQTE')
+                .style.display = "block";
+            a = "Oh potato Round and Brown<br>Delicious skin you have around <br>You season well and cook throughout <br> Potato skins are all about <br> Earthy color, white insides <br> Much much taste, saving lives <br> Oh potato you delicious treat <br> You fill my belly, that’s really neat, <br> Oh potato small or big <br> Your taste the same your shape alike <br> Oh potato you’re a pleasant sight, <br> All throughout the silent night <br> Goodbye potato I will see you again <br> Your ripe brown shine, along the line <br> Of this rhythmic rhyme."
+            b = "’Twas noontide of summer,<br> And mid-time of night; <br> And stars, in their orbits, <br> Shone pale, thro’ the light <br> Of the brighter, cold moon, <br> ’Mid planets her slaves, <br> Herself in the Heavens, <br> Her beam on the waves. <br> I gaz’d awhile <br> On her cold smile; <br> Too cold — too cold for me — <br> There pass’d, as a shroud, <br> A fleecy cloud, <br> And I turn’d away to thee, <br> Proud Evening Star, <br> In thy glory afar, <br> And dearer thy beam shall be; <br> For joy to my heart <br> Is the proud part <br> Thou bearest in Heav’n at night, <br> And more I admire <br> Thy distant fire, <br> Than that colder, lowly light. "
+            c = "The outlook wasn't brilliant for the Mudville nine that day:<br>The score stood four to two, with but one inning more to play,<br>And then when Cooney died at first, and Barrows did the same,<br>A pall-like silence fell upon the patrons of the game.<br>A straggling few got up to go in deep despair. The rest<br>Clung to the hope which springs eternal in the human breast;<br>They thought, 'If only Casey could but get a whack at that—<br>We'd put up even money now, with Casey at the bat.'<br>But Flynn preceded Casey, as did also Jimmy Blake,<br>And the former was a hoodoo, while the latter was a cake;<br>So upon that stricken multitude grim melancholy sat,<br>For there seemed but little chance of Casey getting to the bat.<br>But Flynn let drive a single, to the wonderment of all,<br>And Blake, the much despisèd, tore the cover off the ball;<br>And when the dust had lifted, and men saw what had occurred,<br>There was Jimmy safe at second and Flynn a-hugging third.<br>Then from five thousand throats and more there rose a lusty yell;<br>It rumbled through the valley, it rattled in the dell;<br>It pounded on the mountain and recoiled upon the flat,<br>For Casey, mighty Casey, was advancing to the bat.<br>There was ease in Casey's manner as he stepped into his place;<br>There was pride in Casey's bearing and a smile lit Casey's face.<br>And when, responding to the cheers, he lightly doffed his hat,<br>No stranger in the crowd could doubt 'twas Casey at the bat.<br>Ten thousand eyes were on him as he rubbed his hands with dirt;<br>Five thousand tongues applauded when he wiped them on his shirt;<br>Then while the writhing pitcher ground the ball into his hip,<br>Defiance flashed in Casey's eye, a sneer curled Casey's lip.<br>And now the leather-covered sphere came hurtling through the air,<br>And Casey stood a-watching it in haughty grandeur there.<br>Close by the sturdy batsman the ball unheeded sped—<br>'That ain't my style,' said Casey. 'Strike one!' the umpire said.<br>From the benches, black with people, there went up a muffled roar,<br>Like the beating of the storm-waves on a stern and distant shore;<br>'Kill him! Kill the umpire!' shouted someone on the stand;<br>And it's likely they'd have killed him had not Casey raised his hand.<br>With a smile of Christian charity great Casey's visage shone;<br>He stilled the rising tumult; he bade the game go on;<br>He signaled to the pitcher, and once more the dun sphere flew;<br>But Casey still ignored it and the umpire said, 'Strike two!'<br>'Fraud!' cried the maddened thousands, and echo answered 'Fraud!'<br>But one scornful look from Casey and the audience was awed.<br>They saw his face grow stern and cold, they saw his muscles strain,<br>And they knew that Casey wouldn't let that ball go by again.<br>The sneer is gone from Casey's lip, his teeth are clenched in hate,<br>He pounds with cruel violence his bat upon the plate;<br>And now the pitcher holds the ball, and now he lets it go,<br>And now the air is shattered by the force of Casey's blow.<br>Oh, somewhere in this favoured land the sun is shining bright,<br>The band is playing somewhere, and somewhere hearts are light;<br>And somewhere men are laughing, and somewhere children shout,<br>But there is no joy in Mudville—mighty Casey has struck out."
+            d = "<b>As I Am Now… May We Meet Again</b><br>It started small, an uneasy sensation in the center of my chest,<br>It slowly grew day by day, the more it did, the more I got used to it,<br>Eventually this small circle took over, eroded my emotions of sadness and joy<br>The only thing I was still able to vividly feel was physical pain<br>No, I never purposely hurt myself, that’s just illogical<br>My emotions were fading not my sense of self or my sense of logic ok?<br>Yes I had a desire to die for many years, never to suicide, but<br> This emptiness that engulfed me, erased that desire as well<br>In an unconscious fit one night I expelled everything I had consciously put away<br><i>It was a mess, but…</i><br>It was necessary for me to finally become the nothingness that had engulfed me.<br>This is my last bit of raw emotion,<br>My last poem,<br>I can’t see myself expressing myself through my writing anymore<br>I don’t hold ill will anymore, once I’m done with this writing…<br>All that I’ve had bottled up would finally be healthily expressed.<br>Onion, This is not a final goodbye<br>It’s just a thank you and I hope we meet again sometime in the future,<br>Well, after I’ve explored this “new found” nothingness that I’ve become.<br>My sense of self is still my own, and well<br> I have no more desire to be as reckless as I have been these last couple months.<br>May we meet again my relatively old friend."
+            const knowledge = [a,
+                              b, 
+                              c, 
+                              d ]
+            const credit = ["アルネズ",
+                              "Edgar Allan Poe", 
+                              "Ernest Lawrence Thayer", 
+                              "" ]
+            const random = Math.floor(Math.random()*knowledge.length)
+            document.getElementById('poetry').innerHTML=knowledge[random]
+            document.getElementById('poetryFooter').innerHTML=credit[random]
+      }
+  </script>
 <table class="caption-top table">
 <thead>
 <tr class="header">
