@@ -54,7 +54,7 @@ When we were babies the world was painted, filled with color, as we grew, we wer
             
             
             
-            const knowledge = [a,
+            const poem = [a,
                               b, 
                               c, 
                               d ]
@@ -62,8 +62,8 @@ When we were babies the world was painted, filled with color, as we grew, we wer
                               "Edgar Allan Poe", 
                               "Ernest Lawrence Thayer", 
                               "" ]
-            const random = Math.floor(Math.random()*knowledge.length)
-            document.getElementById('poetry').innerHTML=knowledge[random]
+            const random = Math.floor(Math.random()*poem.length)
+            document.getElementById('poetry').innerHTML=poem[random]
             document.getElementById('poetryFooter').innerHTML=credit[random]
       }
 
