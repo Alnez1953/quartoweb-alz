@@ -119,9 +119,12 @@ h3 {
   color: #DBDBDB;
 }
 
-
 p {
-  text-indent: 40px;
+  text-indent: 2rem;
+}
+
+.figure-img {
+  margin-left: -2rem;
 }
 
 p#poetry{
