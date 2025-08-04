@@ -38,7 +38,7 @@ website:
 format:
   html:
     page-layout: full
-    theme: cyborg
+    theme: [solar, cyborg]
     css: styles.css
     toc: false
 
