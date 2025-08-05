@@ -45,8 +45,14 @@ shopping_behavior %>%
 
 
 ```{r echo=FALSE}
-frequencyPurchase <- table(shopping_behavior$Gender, shopping_behavior$`Item Purchased`, shopping_behavior$`Frequency of Purchases`)
+frequencyPurchase <- table(shopping_behavior$`Item Purchased`, shopping_behavior$`Frequency of Purchases`, shopping_behavior$Gender)
+
 frequencyPurchase
+
+paymentCategory <- table(shopping_behavior$`Payment Method`, shopping_behavior$Category, shopping_behavior$Gender)
+
+paymentCategory
+
 ```
 
 
