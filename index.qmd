@@ -55,9 +55,9 @@ When we were babies the world was painted, filled with color, as we grew, we wer
             
             
             const poem = [a,
-                              b, 
-                              c, 
-                              d ]
+                          b, 
+                          c, 
+                          d ]
             const credit = ["アルネズ",
                               "Edgar Allan Poe", 
                               "Ernest Lawrence Thayer", 
@@ -74,7 +74,7 @@ When we were babies the world was painted, filled with color, as we grew, we wer
 |                         | Different Links                                                   |                                        |
 |------------------------|------------------------|------------------------|
 | Name                    | Description                                                       | Link                                   |
-| Japanese Hiragana/Kanji | Vocab and practice phrases I formatted in a way to help me study. | [Hiragana / Kanji](hiragana_kanji.qmd) |
-| Japanese Katakana       | Vocab I formatted in a way to help me study.                      | [Katakana](katakana.qmd)               |
-| Japanese Math Terms       | Vocab I formatted in a way to help me study.                      | [Math Vocab](mathTerms.qmd)               |
+| Japanese Hiragana/Kanji | Vocab and practice phrases I formatted in a way to help me study. | [Hiragana / Kanji](pdf/HIRAGANA_KANJI-Japanese_Tables.pdf) |
+| Japanese Katakana       | Vocab I formatted in a way to help me study.                      | [Katakana](pdf/KATAKANA-Japanese_Tables.pdf)               |
+| Japanese Math Terms       | Vocab I formatted in a way to help me study.                      | [Math Vocab](pdf/Math_Japanese_Terms.pdf)               |
 
