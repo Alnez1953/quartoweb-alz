@@ -1,0 +1,10 @@
+---
+title: "Math Japanese Terms"
+---
+
+```{=html}
+<iframe
+  src="/pdf/Math_Japanese_Terms.pdf"
+  style="width: 100%; height: 100vh">
+</iframe>
+```

@@ -10,26 +10,37 @@ library(tidyverse)
 library(dplyr)
 library(readr)
 library(ggplot2)
+library(wordcloud2)
 knitr::opts_chunk$set(echo = TRUE, fig.width = 20, fig.height = 10)
 
 #Load CSV file
 sR <- read_csv("master.csv")
 ```
 
+Temp Sample Data
 
-
-```{r include=FALSE}
+```{r echo=FALSE}
 listTodata <- split.data.frame(sR, sR$year)
 
-as.data.frame(listTodata$`1998`)
+slice_sample(as.data.frame(listTodata$`1985`), n=20) %>% select(country, year, sex, age, suicides_no)
 
+slice_sample(as.data.frame(listTodata$`1998`), n=20) %>% select(country, year, sex, age, suicides_no)
+
+slice_sample(as.data.frame(listTodata$`2016`), n=20) %>% select(country, year, sex, age, suicides_no)
+
+```
+
+Temp Hist
+
+```{r echo=FALSE}
 ggplot(as.data.frame(listTodata$`1998`), aes(x=generation, y=suicides_no)) + geom_col()
 ```
 
+Useless Word Cloud: 
 
-
-```{r}
-
+```{r echo=FALSE}
+wc_countrySR <- sR %>%  select("word" = country) %>% transform(freq=ave(seq(nrow(sR)),word,FUN=length)) %>% distinct
+wordcloud2(data=wc_countrySR, size=0.45 , color = 'random-light', shape = 'pentagon', backgroundColor="black")
 ```
 
 
