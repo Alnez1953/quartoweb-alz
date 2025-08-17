@@ -4,7 +4,7 @@ categories: [Work in Progress]
 image: 3951.JPG
 ---
 
-Huge thanks to Sourrav Banerjee who compiled and [published](https://www.kaggle.com/datasets/iamsouravbanerjee/customer-shopping-trends-dataset) the data I used for this analysis.
+Huge thanks to Sourrav Banerjee who compiled and [published](https://www.kaggle.com/datasets/iamsouravbanerjee/customer-shopping-trends-dataset) the data I used for this analysis. 
 
 For a consumer finding out other peoples shopping trends might not be that useful. For small businesses however, knowing how frequent a product is being sold and by which demographic could be important. Realistically I can't definitively say what products will maximize their sales, but I could determine how likely certain products get bought.
 
