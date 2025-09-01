@@ -23,5 +23,11 @@
       "/projects/VidGame/index.html",
       "/projects/Shoppers/index.html"
     ]
+  },
+  {
+    "listing": "/curiositycle.html",
+    "items": [
+      "/curiositycle/bloodborne/index.html"
+    ]
   }
 ]
