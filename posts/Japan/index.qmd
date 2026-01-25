@@ -7,11 +7,20 @@ lightbox: true
 format: html
 ---
 
+
+
 ![IMG_3747](images/IMG_3747.jpg){group=JP}
+
+::: {layout-ncol=2}
 
 ![DSCF1745](images/DSCF1745.jpg){group=JP}
 
 ![DSCF1752](images/DSCF1752.jpg){group=JP}
+::: 
+
+![IMG_4047](images/IMG_4047.jpg){group=JP}
+
+::: {layout-ncol=2}
 
 ![DSCF1773](images/DSCF1773.jpg){group=JP}
 
@@ -20,18 +29,28 @@ format: html
 ![DSCF1783](images/DSCF1783.jpg){group=JP}
 
 ![DSCF1810](images/DSCF1810.jpg){group=JP}
+:::
+
+::: {layout-ncol=3}
 
 ![DSCF1811](images/DSCF1811.jpg){group=JP}
 
 ![DSCF1815](images/DSCF1815.jpg){group=JP}
 
 ![DSCF1820](images/DSCF1820.jpg){group=JP}
-
-![IMG_3746](images/IMG_3746.jpg){group=JP}
+:::
 
 ![IMG_3751](images/IMG_3751.jpg){group=JP}
 
+::: {layout-ncol=2}
+
+![IMG_3746](images/IMG_3746.jpg){group=JP}
+
+
 ![IMG_3758](images/IMG_3758.jpg){group=JP}
+:::
+
+::: {layout-ncol=4}
 
 ![IMG_3774](images/IMG_3774.jpg){group=JP}
 
@@ -41,17 +60,21 @@ format: html
 
 ![IMG_3783](images/IMG_3783.jpg){group=JP}
 
+:::
+
+::: {layout-ncol=2}
+
 ![IMG_3810](images/IMG_3810.jpg){group=JP}
-
-![IMG_3815](images/IMG_3815.jpg){group=JP}
-
-![IMG_3854](images/IMG_3854.jpg){group=JP}
 
 ![IMG_3869](images/IMG_3869.jpg){group=JP}
 
-![IMG_3878](images/IMG_3878.jpg){group=JP}
+![IMG_3815](images/IMG_3815.jpg){group=JP}
 
-![IMG_3881](images/IMG_3881.jpg){group=JP}
+![IMG_4165](images/IMG_4165.jpg){group=JP}
+
+![IMG_3854](images/IMG_3854.jpg){group=JP}
+
+![IMG_3878](images/IMG_3878.jpg){group=JP}
 
 ![IMG_3895](images/IMG_3895.jpg){group=JP}
 
@@ -65,6 +88,10 @@ format: html
 
 ![IMG_3930](images/IMG_3930.jpg){group=JP}
 
+:::
+
+::: {layout-ncol=4}
+
 ![IMG_3935](images/IMG_3935.jpg){group=JP}
 
 ![IMG_3936](images/IMG_3936.jpg){group=JP}
@@ -72,6 +99,9 @@ format: html
 ![IMG_3939](images/IMG_3939.jpg){group=JP}
 
 ![IMG_3944](images/IMG_3944.jpg){group=JP}
+:::
+
+::: {layout-ncol=2}
 
 ![IMG_3946](images/IMG_3946.jpg){group=JP}
 
@@ -95,15 +125,11 @@ format: html
 
 ![IMG_4046](images/IMG_4046.jpg){group=JP}
 
-![IMG_4047](images/IMG_4047.jpg){group=JP}
-
 ![IMG_4057](images/IMG_4057.jpg){group=JP}
 
 ![IMG_4061](images/IMG_4061.jpg){group=JP}
 
 ![IMG_4086](images/IMG_4086.jpg){group=JP}
-
-![IMG_4165](images/IMG_4165.jpg){group=JP}
 
 ![IMG_4174](images/IMG_4174.jpg){group=JP}
 
@@ -123,19 +149,25 @@ format: html
 
 ![IMG_4289](images/IMG_4289.jpg){group=JP}
 
+![IMG_4379](images/IMG_4379.jpg){group=JP}
+
 ![IMG_4303](images/IMG_4303.jpg){group=JP}
 
 ![IMG_4311](images/IMG_4311.jpg){group=JP}
 
+![IMG_3881](images/IMG_3881.jpg){group=JP}
+
 ![IMG_4346](images/IMG_4346.jpg){group=JP}
 
+:::
+
 ![IMG_4353](images/IMG_4353.jpg){group=JP}
+
+::: {layout-ncol=2}
 
 ![IMG_4359](images/IMG_4359.jpg){group=JP}
 
 ![IMG_4363](images/IMG_4363.jpg){group=JP}
-
-![IMG_4379](images/IMG_4379.jpg){group=JP}
 
 ![IMG_4385](images/IMG_4385.jpg){group=JP}
 
@@ -157,9 +189,7 @@ format: html
 
 ![IMG_4554](images/IMG_4554.jpg){group=JP}
 
-![IMG_4560](images/IMG_4560.jpg){group=JP}
-
-![IMG_4567](images/IMG_4567.jpg){group=JP}
+:::
 
 ![IMG_4574](images/IMG_4574.jpg){group=JP}
 
@@ -167,39 +197,42 @@ format: html
 
 ![IMG_4623](images/IMG_4623.jpg){group=JP}
 
+::: {layout-ncol=2}
+
 ![IMG_4650](images/IMG_4650.jpg){group=JP}
 
 ![IMG_4658](images/IMG_4658.jpg){group=JP}
 
 ![IMG_4662](images/IMG_4662.jpg){group=JP}
 
+![IMG_4697](images/IMG_4697.jpg){group=JP}
+
 ![IMG_4680](images/IMG_4680.jpg){group=JP}
 
 ![IMG_4691](images/IMG_4691.jpg){group=JP}
-
-![IMG_4697](images/IMG_4697.jpg){group=JP}
 
 ![IMG_4732](images/IMG_4732.jpg){group=JP}
 
 ![IMG_4740](images/IMG_4740.jpg){group=JP}
 
-![IMG_4745](images/IMG_4745.jpg){group=JP}
-
-![IMG_4758](images/IMG_4758.jpg){group=JP}
-
 ![IMG_4779](images/IMG_4779.jpg){group=JP}
-
-![IMG_4787](images/IMG_4787.jpg){group=JP}
 
 ![IMG_4812](images/IMG_4812.jpg){group=JP}
 
 ![IMG_4827](images/IMG_4827.jpg){group=JP}
 
-![IMG_4843](images/IMG_4843.jpg){group=JP}
-
 ![IMG_4856](images/IMG_4856.jpg){group=JP}
 
+![IMG_4843](images/IMG_4843.jpg){group=JP}
+
+![IMG_4787](images/IMG_4787.jpg){group=JP}
+
+::: 
+
 ![IMG_4865](images/IMG_4865.jpg){group=JP}
+
+::: {layout-ncol=2}
+
 
 ![IMG_4870](images/IMG_4870.jpg){group=JP}
 
@@ -209,7 +242,11 @@ format: html
 
 ![IMG_4889](images/IMG_4889.jpg){group=JP}
 
+:::
+
 ![IMG_4910](images/IMG_4910.jpg){group=JP}
+
+::: {layout-ncol=2}
 
 ![IMG_4916](images/IMG_4916.jpg){group=JP}
 
@@ -219,7 +256,11 @@ format: html
 
 ![IMG_4933](images/IMG_4933.jpg){group=JP}
 
+:::
+
 ![IMG_4943](images/IMG_4943.jpg){group=JP}
+
+::: {layout-ncol=4}
 
 ![IMG_4948](images/IMG_4948.jpg){group=JP}
 
@@ -229,11 +270,15 @@ format: html
 
 ![IMG_4970](images/IMG_4970.jpg){group=JP}
 
+:::
+
+::: {layout-ncol=2}
+
 ![IMG_4980](images/IMG_4980.jpg){group=JP}
 
-![IMG_5017](images/IMG_5017.jpg){group=JP}
-
 ![IMG_5020](images/IMG_5020.jpg){group=JP}
+
+![IMG_5017](images/IMG_5017.jpg){group=JP}
 
 ![IMG_5031](images/IMG_5031.jpg){group=JP}
 
@@ -241,9 +286,13 @@ format: html
 
 ![IMG_5044](images/IMG_5044.jpg){group=JP}
 
+:::
+
 ![IMG_5047](images/IMG_5047.jpg){group=JP}
 
 ![IMG_5052](images/IMG_5052.jpg){group=JP}
+
+::: {layout-ncol=2}
 
 ![IMG_5054](images/IMG_5054.jpg){group=JP}
 
@@ -261,9 +310,13 @@ format: html
 
 ![IMG_5084](images/IMG_5084.jpg){group=JP}
 
+:::
+
 ![IMG_5088](images/IMG_5088.jpg){group=JP}
 
 ![IMG_5102](images/IMG_5102.jpg){group=JP}
+
+::: {layout-ncol=2}
 
 ![IMG_5107](images/IMG_5107.jpg){group=JP}
 
@@ -283,11 +336,15 @@ format: html
 
 ![IMG_5167](images/IMG_5167.jpg){group=JP}
 
-![IMG_5173](images/IMG_5173.jpg){group=JP}
-
 ![IMG_5177](images/IMG_5177.jpg){group=JP}
 
+![IMG_5173](images/IMG_5173.jpg){group=JP}
+
 ![IMG_5186](images/IMG_5186.jpg){group=JP}
+
+:::
+
+::: {layout-ncol=3}
 
 ![IMG_5217](images/IMG_5217.jpg){group=JP}
 
@@ -295,39 +352,52 @@ format: html
 
 ![IMG_5220](images/IMG_5220.jpg){group=JP}
 
+:::
+
+::: {layout-ncol=2}
+
 ![IMG_5247](images/IMG_5247.jpg){group=JP}
 
-![IMG_5313](images/IMG_5313.jpg){group=JP}
-
 ![IMG_5350](images/IMG_5350.jpg){group=JP}
+
+![IMG_5313](images/IMG_5313.jpg){group=JP}
 
 ![IMG_5383](images/IMG_5383.jpg){group=JP}
 
 ![IMG_5416](images/IMG_5416.jpg){group=JP}
 
-![IMG_5430](images/IMG_5430.jpg){group=JP}
-
 ![IMG_5436](images/IMG_5436.jpg){group=JP}
 
 ![IMG_5439](images/IMG_5439.jpg){group=JP}
 
+![IMG_5459](images/IMG_5459.jpg){group=JP}
+
 ![IMG_5450](images/IMG_5450.jpg){group=JP}
+
+![IMG_5430](images/IMG_5430.jpg){group=JP}
 
 ![IMG_5454](images/IMG_5454.jpg){group=JP}
 
-![IMG_5459](images/IMG_5459.jpg){group=JP}
-
 ![IMG_5464](images/IMG_5464.jpg){group=JP}
 
+::: 
+
 ![IMG_5475](images/IMG_5475.jpg){group=JP}
+
+::: {layout-ncol=2}
+
 
 ![IMG_5486](images/IMG_5486.jpg){group=JP}
 
 ![IMG_5529](images/IMG_5529.jpg){group=JP}
 
+:::
+
 ![IMG_5552](images/IMG_5552.jpg){group=JP}
 
 ![IMG_5561](images/IMG_5561.jpg){group=JP}
+
+::: {layout-ncol=4}
 
 ![IMG_5575](images/IMG_5575.jpg){group=JP}
 
@@ -337,13 +407,22 @@ format: html
 
 ![IMG_5604](images/IMG_5604.jpg){group=JP}
 
+::: 
+
+::: {layout-ncol=3}
+
 ![IMG_5615](images/IMG_5615.jpg){group=JP}
 
 ![IMG_5625](images/IMG_5625.jpg){group=JP}
 
 ![IMG_5636](images/IMG_5636.jpg){group=JP}
 
+:::
+
+
 ![IMG_5638](images/IMG_5638.jpg){group=JP}
+
+::: {layout-ncol=2}
 
 ![IMG_5652](images/IMG_5652.jpg){group=JP}
 
@@ -359,15 +438,19 @@ format: html
 
 ![IMG_5698](images/IMG_5698.jpg){group=JP}
 
-![IMG_5705](images/IMG_5705.jpg){group=JP}
-
 ![IMG_5717](images/IMG_5717.jpg){group=JP}
 
+![IMG_5705](images/IMG_5705.jpg){group=JP}
+
 ![IMG_5718](images/IMG_5718.jpg){group=JP}
+
+:::
 
 ![IMG_5724](images/IMG_5724.jpg){group=JP}
 
 ![IMG_5725](images/IMG_5725.jpg){group=JP}
+
+::: {layout-ncol=2}
 
 ![IMG_5736](images/IMG_5736.jpg){group=JP}
 
@@ -381,14 +464,10 @@ format: html
 
 ![IMG_5800](images/IMG_5800.jpg){group=JP}
 
+:::
+
 ![IMG_5808](images/IMG_5808.jpg){group=JP}
-
-![IMG_5861](images/IMG_5861.jpg){group=JP}
-
-![IMG_5870](images/IMG_5870.jpg){group=JP}
 
 ![IMG_5909](images/IMG_5909.jpg){group=JP}
 
 ![IMG_5985](images/IMG_5985.jpg){group=JP}
-
-![P1010318](images/P1010318.jpg){group=JP}
