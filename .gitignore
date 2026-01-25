@@ -4,3 +4,5 @@
 .Ruserdata
 /.quarto/
 styles.css
+
+**/*.quarto_ipynb
