@@ -178,7 +178,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 
 <p>Huge thanks to Sourrav Banerjee who compiled and <a href="https://www.kaggle.com/datasets/iamsouravbanerjee/customer-shopping-trends-dataset">published</a> the data I used for this analysis.</p>
-<p>For a consumer finding out other peoples shopping trends might not be that useful. For small businesses however, knowing how frequent a product is being sold and by which demographic could be important. Realistically I can’t definitively say what products will maximize their sales, but I could determine how likely certain products get bought.</p>
+<p>For a consumer, finding out other peoples shopping trends might not be that useful. For small businesses however, knowing how frequent a product is being sold and by which demographic could be important. Realistically I can’t definitively say what products will maximize their sales, but I could determine how likely certain products get bought. This would give a solid baseline as to which product type should be continued.</p>
 <div class="cell">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>shopping_behavior <span class="sc">%&gt;%</span></span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ggplot</span>(<span class="fu">aes</span>(<span class="at">x =</span> <span class="st">`</span><span class="at">Purchase Amount (USD)</span><span class="st">`</span>, <span class="at">color =</span> Gender)) <span class="sc">+</span></span>

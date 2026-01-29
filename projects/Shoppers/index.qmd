@@ -6,7 +6,7 @@ image: 3951.JPG
 
 Huge thanks to Sourrav Banerjee who compiled and [published](https://www.kaggle.com/datasets/iamsouravbanerjee/customer-shopping-trends-dataset) the data I used for this analysis. 
 
-For a consumer finding out other peoples shopping trends might not be that useful. For small businesses however, knowing how frequent a product is being sold and by which demographic could be important. Realistically I can't definitively say what products will maximize their sales, but I could determine how likely certain products get bought.
+For a consumer, finding out other peoples shopping trends might not be that useful. For small businesses however, knowing how frequent a product is being sold and by which demographic could be important. Realistically I can't definitively say what products will maximize their sales, but I could determine how likely certain products get bought. This would give a solid baseline as to which product type should be continued.
 
 ```{r load-packages, include=FALSE}
 knitr::opts_chunk$set(warning = FALSE, message = FALSE) 
@@ -14,6 +14,7 @@ library(tidyverse)
 library(dplyr)
 library(readr)
 library(ggplot2)
+library(csucistats)
 knitr::opts_chunk$set(echo = TRUE, fig.width = 11.4, fig.height = 5)
 
 #Load CSV file
