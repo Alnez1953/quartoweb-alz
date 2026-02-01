@@ -21,38 +21,94 @@ knitr::opts_chunk$set(echo = TRUE, fig.width = 11.4, fig.height = 5)
 shopping_behavior <- read_csv("shopping_behavior_updated.csv")
 ```
 
+Lets begin by getting a rough view of a part of the data we're going to be graphing. Separated by gender (male and female) we'll see how the data is distributed with the amount of purchases they've done. This is to see if there's any large bias in the data set I might need to consider later.
 
-
-```{r}
-shopping_behavior %>%
-  ggplot(aes(x = `Purchase Amount (USD)`, color = Gender)) +
-  geom_histogram(binwidth = 10) +
-  ggtitle("Distribution of Purchase Amounts")
-
+```{r echo=FALSE}
 shopping_behavior %>%
   group_by(Gender) %>%
   summarize(mean_purchase = mean(`Purchase Amount (USD)`),
             median_purchase = median(`Purchase Amount (USD)`))
-
-shopping_behavior %>%
-  group_by(`Payment Method`) %>%
-  summarize(count = n()) %>%
-  ggplot(aes(x = `Payment Method`, y = count)) +
-  geom_bar(stat = "identity") +
-  ggtitle("Distribution of Payment Methods")
 ```
 
+With this I could say the spending habits of men and women displayed in the data are pretty evenly distributed. Now lets get a basic graphs to help visualize some of the differences between how many more instances of people purchasing 20-100 items exist. The count value in the second graph is significantly larger because, for clarity, I grouped up the amount purchased in frequencies of five (20-24, 25-29, so on so forth). That is to say all people who only bought twenty to twenty four items are grouped together.
 
+```{r echo=FALSE}
+shopping_behavior %>%
+  ggplot(aes(x = `Purchase Amount (USD)`, color = Gender)) +
+         geom_histogram(binwidth = 1) +
+    scale_x_continuous(breaks = c(20,30,40,50,60,70,80,90,100)) +
+  #Aesthetics and graph details.
+  theme(
+  panel.background = element_rect(fill = "black",
+                                color = "yellow",
+                                size = 0.25, linetype = 'solid'),
+  panel.grid.major = element_line(size = 0.25, linetype = 'solid',
+                                color = "blue"), 
+  panel.grid.minor = element_line(size = 0.25, linetype = 'solid',
+                                color = "yellow"),
+  plot.background = element_rect(fill = "gray", color = "yellow"),
+  axis.text.x = element_text(face = "bold", color = "red", 
+                             size=9, angle = 45,hjust=1),
+  axis.title.x = element_text(face = "bold", color = "black", 
+                             size=14),
+  axis.text.y = element_text(face = "bold", color = "black", size=9, 
+                             hjust=1), 
+  axis.title.y = element_text(face = "bold", color = "black", 
+                             size=14), 
+  plot.title = 
+  element_text(color = "blue", size = 18, face = "bold", hjust = 0.5)) + 
+  labs(title = "Distribution of Purchase Amounts") + xlab("Purchase Amount") + ylab("Count")
+
+shopping_behavior %>%
+  ggplot(aes(x = `Purchase Amount (USD)`, color = Gender)) +
+         geom_histogram(binwidth = 5) +
+    scale_x_continuous(breaks = c(20,30,40,50,60,70,80,90,100)) + 
+  #Aesthetics and graph details.
+  theme(
+  panel.background = element_rect(fill = "black",
+                                color = "yellow",
+                                size = 0.25, linetype = 'solid'),
+  panel.grid.major = element_line(size = 0.25, linetype = 'solid',
+                                color = "blue"), 
+  panel.grid.minor = element_line(size = 0.25, linetype = 'solid',
+                                color = "yellow"),
+  plot.background = element_rect(fill = "gray", color = "yellow"),
+  axis.text.x = element_text(face = "bold", color = "red", 
+                             size=9, angle = 45,hjust=1),
+  axis.title.x = element_text(face = "bold", color = "black", 
+                             size=14),
+  axis.text.y = element_text(face = "bold", color = "black", size=9, 
+                             hjust=1), 
+  axis.title.y = element_text(face = "bold", color = "black", 
+                             size=14),
+  plot.title = 
+  element_text(color = "blue", size = 18, face = "bold", hjust = 0.5)) + 
+  labs(title = "Distribution of Purchase Amounts") + xlab("Purchase Amount (Grouped by 5)") + ylab("Count")
+
+```
+
+Bar graphs are good quick visualizations but having the data more accurately displayed is important. Suppose you wanted to see what payment method your clients had and what data you had to work with. 
+
+```{r echo=FALSE}
+shopping_behavior %>%
+  group_by(`Payment Method`) %>%
+  summarize(count = n())
+```
+
+This is still pretty general though, let's look at something much more specific. These next expanded tables with regards to men and women detail the frequency purchase for specific items and their quantity.
 
 ```{r echo=FALSE}
 frequencyPurchase <- table(shopping_behavior$`Item Purchased`, shopping_behavior$`Frequency of Purchases`, shopping_behavior$Gender)
 
 frequencyPurchase
+```
 
+
+
+```{r echo=FALSE}
 paymentCategory <- table(shopping_behavior$`Payment Method`, shopping_behavior$Category, shopping_behavior$Gender)
 
 paymentCategory
-
 ```
 
 
