@@ -20,41 +20,6 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-/* CSS for syntax highlighting */
-html { -webkit-text-size-adjust: 100%; }
-pre > code.sourceCode { white-space: pre; position: relative; }
-pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
-pre > code.sourceCode > span:empty { height: 1.2em; }
-.sourceCode { overflow: visible; }
-code.sourceCode > span { color: inherit; text-decoration: inherit; }
-div.sourceCode { margin: 1em 0; }
-pre.sourceCode { margin: 0; }
-@media screen {
-div.sourceCode { overflow: auto; }
-}
-@media print {
-pre > code.sourceCode { white-space: pre-wrap; }
-pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
-}
-pre.numberSource code
-  { counter-reset: source-line 0; }
-pre.numberSource code > span
-  { position: relative; left: -4em; counter-increment: source-line; }
-pre.numberSource code > span > a:first-child::before
-  { content: counter(source-line);
-    position: relative; left: -1em; text-align: right; vertical-align: baseline;
-    border: none; display: inline-block;
-    -webkit-touch-callout: none; -webkit-user-select: none;
-    -khtml-user-select: none; -moz-user-select: none;
-    -ms-user-select: none; user-select: none;
-    padding: 0 4px; width: 4em;
-  }
-pre.numberSource { margin-left: 3em;  padding-left: 4px; }
-div.sourceCode
-  {   }
-@media screen {
-pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
-}
 </style>
 
 
@@ -179,22 +144,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 <p>Huge thanks to Sourrav Banerjee who compiled and <a href="https://www.kaggle.com/datasets/iamsouravbanerjee/customer-shopping-trends-dataset">published</a> the data I used for this analysis.</p>
 <p>For a consumer, finding out other peoples shopping trends might not be that useful. For small businesses however, knowing how frequent a product is being sold and by which demographic could be important. Realistically I can’t definitively say what products will maximize their sales, but I could determine how likely certain products get bought. This would give a solid baseline as to which product type should be continued.</p>
+<p>Lets begin by getting a rough view of a part of the data we’re going to be graphing. Separated by gender (male and female) we’ll see how the data is distributed with the amount of purchases they’ve done. This is to see if there’s any large bias in the data set I might need to consider later.</p>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>shopping_behavior <span class="sc">%&gt;%</span></span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ggplot</span>(<span class="fu">aes</span>(<span class="at">x =</span> <span class="st">`</span><span class="at">Purchase Amount (USD)</span><span class="st">`</span>, <span class="at">color =</span> Gender)) <span class="sc">+</span></span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_histogram</span>(<span class="at">binwidth =</span> <span class="dv">10</span>) <span class="sc">+</span></span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ggtitle</span>(<span class="st">"Distribution of Purchase Amounts"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<div class="cell-output-display">
-<div>
-<figure class="figure">
-<p><img src="index_files/figure-html/unnamed-chunk-1-1.png" class="img-fluid figure-img" width="1094"></p>
-</figure>
-</div>
-</div>
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>shopping_behavior <span class="sc">%&gt;%</span></span>
-<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">group_by</span>(Gender) <span class="sc">%&gt;%</span></span>
-<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">summarize</span>(<span class="at">mean_purchase =</span> <span class="fu">mean</span>(<span class="st">`</span><span class="at">Purchase Amount (USD)</span><span class="st">`</span>),</span>
-<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>            <span class="at">median_purchase =</span> <span class="fu">median</span>(<span class="st">`</span><span class="at">Purchase Amount (USD)</span><span class="st">`</span>))</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
 <pre><code># A tibble: 2 × 3
   Gender mean_purchase median_purchase
@@ -202,20 +153,39 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 1 Female          60.2              60
 2 Male            59.5              60</code></pre>
 </div>
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>shopping_behavior <span class="sc">%&gt;%</span></span>
-<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">group_by</span>(<span class="st">`</span><span class="at">Payment Method</span><span class="st">`</span>) <span class="sc">%&gt;%</span></span>
-<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">summarize</span>(<span class="at">count =</span> <span class="fu">n</span>()) <span class="sc">%&gt;%</span></span>
-<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ggplot</span>(<span class="fu">aes</span>(<span class="at">x =</span> <span class="st">`</span><span class="at">Payment Method</span><span class="st">`</span>, <span class="at">y =</span> count)) <span class="sc">+</span></span>
-<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_bar</span>(<span class="at">stat =</span> <span class="st">"identity"</span>) <span class="sc">+</span></span>
-<span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ggtitle</span>(<span class="st">"Distribution of Payment Methods"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
+<p>With this I could say the spending habits of men and women displayed in the data are pretty evenly distributed. Now lets get a basic graphs to help visualize some of the differences between how many more instances of people purchasing 20-100 items exist. The count value in the second graph is significantly larger because, for clarity, I grouped up the amount purchased in frequencies of five (20-24, 25-29, so on so forth). That is to say all people who only bought twenty to twenty four items are grouped together.</p>
+<div class="cell">
 <div class="cell-output-display">
 <div>
 <figure class="figure">
-<p><img src="index_files/figure-html/unnamed-chunk-1-2.png" class="img-fluid figure-img" width="1094"></p>
+<p><img src="index_files/figure-html/unnamed-chunk-2-1.png" class="img-fluid figure-img" width="1094"></p>
+</figure>
+</div>
+</div>
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="index_files/figure-html/unnamed-chunk-2-2.png" class="img-fluid figure-img" width="1094"></p>
 </figure>
 </div>
 </div>
 </div>
+<p>Bar graphs are good quick visualizations but having the data more accurately displayed is important. Suppose you wanted to see what payment method your clients had and what data you had to work with.</p>
+<div class="cell">
+<div class="cell-output cell-output-stdout">
+<pre><code># A tibble: 6 × 2
+  `Payment Method` count
+  &lt;chr&gt;            &lt;int&gt;
+1 Bank Transfer      612
+2 Cash               670
+3 Credit Card        671
+4 Debit Card         636
+5 PayPal             677
+6 Venmo              634</code></pre>
+</div>
+</div>
+<p>This is still pretty general though, let’s look at something much more specific. These next expanded tables with regards to men and women detail the frequency purchase for specific items and their quantity.</p>
 <div class="cell">
 <div class="cell-output cell-output-stdout">
 <pre><code>, ,  = Female
@@ -332,6 +302,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   Sweater        22
   T-shirt        13</code></pre>
 </div>
+</div>
+<div class="cell">
 <div class="cell-output cell-output-stdout">
 <pre><code>, ,  = Female
 
