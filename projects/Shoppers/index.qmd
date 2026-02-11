@@ -1,6 +1,6 @@
 ---
 title: "Shoppers"
-categories: [Work in Progress]
+categories: [Shoppers]
 image: 3951.JPG
 ---
 
@@ -95,6 +95,12 @@ shopping_behavior %>%
   summarize(count = n())
 ```
 
+```{r echo=FALSE}
+paymentCategory <- table(shopping_behavior$`Payment Method`, shopping_behavior$Category, shopping_behavior$Gender)
+
+paymentCategory
+```
+
 This is still pretty general though, let's look at something much more specific. These next expanded tables with regards to men and women detail the frequency purchase for specific items and their quantity.
 
 ```{r echo=FALSE}
@@ -103,17 +109,9 @@ frequencyPurchase <- table(shopping_behavior$`Item Purchased`, shopping_behavior
 frequencyPurchase
 ```
 
-
+Perfect! With this we could infer what items would be in higher demand and how often the store should stock. 
 
 ```{r echo=FALSE}
-paymentCategory <- table(shopping_behavior$`Payment Method`, shopping_behavior$Category, shopping_behavior$Gender)
-
-paymentCategory
-```
-
-
-
-```{r}
 
 
 ```
