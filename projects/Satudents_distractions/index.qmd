@@ -1,0 +1,55 @@
+---
+title: "Student Productivity and Digital Distraction"
+categories: [Work in Progress, Students]
+image: DSCF1029.png
+---
+
+I've acquired this free data set named [Student Productivity & Digital Distraction Dataset](https://www.kaggle.com/datasets/sehaj1104/student-productivity-and-digital-distraction-dataset?select=student_productivity_distraction_dataset_20000.csv) from Mansehaj Preet in kaggle.
+
+
+```{r include=FALSE}
+knitr::opts_chunk$set(warning = FALSE, message = FALSE) 
+library(tidyverse)
+library(dplyr)
+library(readr)
+library(ggplot2)
+knitr::opts_chunk$set(echo = TRUE, fig.width = 20, fig.height = 10)
+
+#Load CSV file
+stupro <- read_csv("student_productivity_distraction_dataset_20000.csv")
+```
+
+
+
+```{r echo=FALSE}
+head(stupro)
+
+```
+
+
+
+```{r echo=FALSE}
+
+
+```
+
+
+
+```{r echo=FALSE}
+
+
+```
+
+
+
+```{r echo=FALSE}
+
+
+```
+
+
+
+```{r echo=FALSE}
+
+
+```
