@@ -2,13 +2,16 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.8.25">
+<meta name="generator" content="quarto-1.9.37">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
 <title>Suicide Rates – Home</title>
 <style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
 div.columns{display: flex; gap: min(4vw, 1.5em);}
@@ -28,15 +31,14 @@ ul.task-list li input[type="checkbox"] {
 <script src="../../site_libs/clipboard/clipboard.min.js"></script>
 <script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="../../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
 <script src="../../site_libs/quarto-html/popper.min.js"></script>
 <script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-dark-707d8167ce6003fca903bfe2be84ab7f.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-dark-d0ae9245876894da5ac7e18953ecc5cc.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../site_libs/bootstrap/bootstrap-82916bbae1ccb0fc15e80e4d1471270f.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="dark">
+<link href="../../site_libs/bootstrap/bootstrap-db3236b983a570e3d60e223eea4b6969.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="dark">
 <script id="quarto-search-options" type="application/json">{
   "language": {
     "search-no-results-text": "No results",
@@ -70,8 +72,6 @@ ul.task-list li input[type="checkbox"] {
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a href="../../index.html" class="navbar-brand navbar-brand-logo">
-    </a>
     <a class="navbar-brand" href="../../index.html">
     <span class="navbar-title">Home</span>
     </a>
@@ -151,73 +151,73 @@ ul.task-list li input[type="checkbox"] {
 <p>Temp Sample Data</p>
 <div class="cell">
 <div class="cell-output cell-output-stdout">
-<pre><code>                        country year    sex         age suicides_no
-1  Saint Vincent and Grenadines 1985 female 25-34 years           0
-2                       Ireland 1985 female   75+ years           1
-3                      Paraguay 1985 female 35-54 years           3
-4                       Jamaica 1985 female 55-74 years           0
-5                        Kuwait 1985   male  5-14 years           0
-6                        Israel 1985 female  5-14 years           0
-7                      Thailand 1985   male   75+ years          28
-8                        Brazil 1985 female 35-54 years         296
-9                         Japan 1985   male 15-24 years        1139
-10                     Suriname 1985 female 15-24 years           7
-11                     Thailand 1985 female 35-54 years         236
-12          Trinidad and Tobago 1985   male 55-74 years           2
-13                     Thailand 1985 female 25-34 years         254
-14                        Italy 1985 female 15-24 years          60
-15                   Seychelles 1985   male 15-24 years           3
-16 Saint Vincent and Grenadines 1985 female 55-74 years           0
-17                      Iceland 1985 female  5-14 years           0
-18          Trinidad and Tobago 1985   male 25-34 years           8
-19                       Israel 1985 female 15-24 years           7
-20                     Barbados 1985   male 35-54 years           0</code></pre>
+<pre><code>               country year    sex         age suicides_no
+1               Panama 1985 female 55-74 years           3
+2             Paraguay 1985   male 25-34 years           4
+3       United Kingdom 1985   male 35-54 years        1208
+4             Bulgaria 1985 female 35-54 years          91
+5              Bahrain 1985 female 15-24 years           0
+6                Chile 1985 female 35-54 years          40
+7                Japan 1985 female 25-34 years         817
+8  Trinidad and Tobago 1985   male 25-34 years           8
+9               France 1985   male 35-54 years        2752
+10            Thailand 1985 female   75+ years          17
+11               Japan 1985 female 15-24 years         491
+12           Australia 1985 female 35-54 years         143
+13 Trinidad and Tobago 1985 female 25-34 years           2
+14       United States 1985   male  5-14 years         205
+15 Antigua and Barbuda 1985 female 15-24 years           0
+16              Greece 1985 female 15-24 years          13
+17               Japan 1985 female 35-54 years        2582
+18            Suriname 1985 female   75+ years           2
+19              Canada 1985   male 15-24 years         560
+20      United Kingdom 1985 female 25-34 years         176</code></pre>
 </div>
 <div class="cell-output cell-output-stdout">
-<pre><code>        country year    sex         age suicides_no
-1       Belgium 1998 female 15-24 years          31
-2        Latvia 1998   male  5-14 years           5
-3       Bahrain 1998 female 25-34 years           0
-4    Azerbaijan 1998   male 35-54 years          18
-5       Bahamas 1998 female 55-74 years           0
-6        Panama 1998 female  5-14 years           0
-7       Ecuador 1998 female   75+ years           3
-8    Azerbaijan 1998   male 15-24 years           2
-9  Turkmenistan 1998   male 55-74 years          20
-10    Mauritius 1998 female 35-54 years           8
-11  New Zealand 1998 female 15-24 years          35
-12   Azerbaijan 1998   male 55-74 years           8
-13 Turkmenistan 1998   male  5-14 years          15
-14      Romania 1998   male 35-54 years        1082
-15       Sweden 1998 female 55-74 years         107
-16       Greece 1998   male 55-74 years         105
-17      Denmark 1998   male 15-24 years          34
-18       Israel 1998 female 15-24 years          13
-19     Colombia 1998 female  5-14 years          47
-20      Georgia 1998   male 35-54 years          37</code></pre>
+<pre><code>              country year    sex         age suicides_no
+1             Albania 1998   male 25-34 years          26
+2             Belarus 1998   male   75+ years          82
+3              Serbia 1998 female 55-74 years         197
+4              Panama 1998   male 25-34 years          34
+5  Russian Federation 1998 female   75+ years        1431
+6           Mauritius 1998   male 15-24 years          20
+7               Spain 1998 female 55-74 years         257
+8         Saint Lucia 1998 female 35-54 years           2
+9            Slovenia 1998 female 55-74 years          42
+10            Germany 1998 female  5-14 years          16
+11         Kyrgyzstan 1998 female   75+ years           3
+12             France 1998   male   75+ years        1207
+13            Iceland 1998   male 15-24 years           5
+14             Belize 1998   male 15-24 years           2
+15              Japan 1998 female 15-24 years         612
+16             Israel 1998   male  5-14 years           2
+17            Belarus 1998 female 55-74 years         185
+18            Croatia 1998   male  5-14 years           3
+19            Belgium 1998   male   75+ years         185
+20      United States 1998 female 15-24 years         603</code></pre>
 </div>
 <div class="cell-output cell-output-stdout">
 <pre><code>          country year    sex         age suicides_no
-1         Austria 2016   male   75+ years         212
-2  Czech Republic 2016   male   75+ years         140
-3        Mongolia 2016   male 15-24 years          85
-4       Lithuania 2016   male 55-74 years         212
-5  Czech Republic 2016   male 15-24 years          78
-6       Mauritius 2016   male 15-24 years          18
-7           Qatar 2016 female 15-24 years           0
-8          Cyprus 2016   male 25-34 years           2
-9          Sweden 2016   male 25-34 years         114
-10 Czech Republic 2016   male 55-74 years         319
-11          Qatar 2016 female 55-74 years           0
-12       Mongolia 2016   male 35-54 years         127
-13        Croatia 2016 female 25-34 years           6
-14        Grenada 2016 female   75+ years           0
-15        Grenada 2016   male 35-54 years           0
-16        Armenia 2016 female 25-34 years           2
-17         Sweden 2016 female 55-74 years         104
-18        Croatia 2016 female 15-24 years           6
-19        Grenada 2016   male 55-74 years           0
-20        Iceland 2016   male 35-54 years          11</code></pre>
+1       Mauritius 2016 female   75+ years           0
+2         Croatia 2016 female   75+ years          40
+3         Iceland 2016 female 55-74 years           2
+4        Mongolia 2016   male 35-54 years         127
+5          Cyprus 2016   male 25-34 years           2
+6         Grenada 2016   male 55-74 years           0
+7         Hungary 2016   male   75+ years         214
+8         Austria 2016 female 55-74 years          99
+9           Qatar 2016 female 25-34 years           2
+10      Mauritius 2016 female 55-74 years           2
+11      Mauritius 2016   male 25-34 years          17
+12      Lithuania 2016   male   75+ years          78
+13       Mongolia 2016   male   75+ years           3
+14 Czech Republic 2016   male   75+ years         140
+15 Czech Republic 2016 female 15-24 years          22
+16       Mongolia 2016 female 55-74 years           1
+17      Lithuania 2016 female   75+ years          29
+18        Armenia 2016   male 15-24 years           5
+19        Hungary 2016   male 15-24 years          58
+20         Sweden 2016   male 55-74 years         232</code></pre>
 </div>
 </div>
 <p>Temp Hist</p>
@@ -233,8 +233,8 @@ ul.task-list li input[type="checkbox"] {
 <p>Useless Word Cloud:</p>
 <div class="cell">
 <div class="cell-output-display">
-<div class="wordcloud2 html-widget html-fill-item" id="htmlwidget-d245e25cd0bfd29f8320" style="width:100%;height:325px;"></div>
-<script type="application/json" data-for="htmlwidget-d245e25cd0bfd29f8320">{"x":{"word":["Albania","Antigua and Barbuda","Argentina","Armenia","Aruba","Australia","Austria","Azerbaijan","Bahamas","Bahrain","Barbados","Belarus","Belgium","Belize","Bosnia and Herzegovina","Brazil","Bulgaria","Cabo Verde","Canada","Chile","Colombia","Costa Rica","Croatia","Cuba","Cyprus","Czech Republic","Denmark","Dominica","Ecuador","El Salvador","Estonia","Fiji","Finland","France","Georgia","Germany","Greece","Grenada","Guatemala","Guyana","Hungary","Iceland","Ireland","Israel","Italy","Jamaica","Japan","Kazakhstan","Kiribati","Kuwait","Kyrgyzstan","Latvia","Lithuania","Luxembourg","Macau","Maldives","Malta","Mauritius","Mexico","Mongolia","Montenegro","Netherlands","New Zealand","Nicaragua","Norway","Oman","Panama","Paraguay","Philippines","Poland","Portugal","Puerto Rico","Qatar","Republic of Korea","Romania","Russian Federation","Saint Kitts and Nevis","Saint Lucia","Saint Vincent and Grenadines","San Marino","Serbia","Seychelles","Singapore","Slovakia","Slovenia","South Africa","Spain","Sri Lanka","Suriname","Sweden","Switzerland","Thailand","Trinidad and Tobago","Turkey","Turkmenistan","Ukraine","United Arab Emirates","United Kingdom","United States","Uruguay","Uzbekistan"],"freq":[264,324,372,298,168,360,382,192,276,252,300,252,372,336,24,372,360,12,348,372,372,360,262,288,178,322,264,12,372,288,252,132,348,360,264,312,372,310,360,300,310,382,360,372,372,204,372,312,132,300,312,252,262,372,12,120,372,382,372,10,120,382,348,72,360,36,300,324,180,288,324,372,178,372,334,324,36,336,300,36,216,216,372,264,252,240,372,132,336,358,252,334,324,84,348,336,72,372,372,336,264],"fontFamily":"Segoe UI","fontWeight":"bold","color":"random-light","minSize":0,"weightFactor":0.2120418848167539,"backgroundColor":"black","gridSize":0,"minRotation":-0.7853981633974483,"maxRotation":0.7853981633974483,"shuffle":true,"rotateRatio":0.4,"shape":"pentagon","ellipticity":0.65,"figBase64":null,"hover":null},"evals":[],"jsHooks":{"render":[{"code":"function(el,x){\n                        console.log(123);\n                        if(!iii){\n                          window.location.reload();\n                          iii = False;\n\n                        }\n  }","data":null}]}}</script>
+<div class="wordcloud2 html-widget html-fill-item" id="htmlwidget-835c02882c998e264bd5" style="width:100%;height:325px;"></div>
+<script type="application/json" data-for="htmlwidget-835c02882c998e264bd5">{"x":{"word":["Albania","Antigua and Barbuda","Argentina","Armenia","Aruba","Australia","Austria","Azerbaijan","Bahamas","Bahrain","Barbados","Belarus","Belgium","Belize","Bosnia and Herzegovina","Brazil","Bulgaria","Cabo Verde","Canada","Chile","Colombia","Costa Rica","Croatia","Cuba","Cyprus","Czech Republic","Denmark","Dominica","Ecuador","El Salvador","Estonia","Fiji","Finland","France","Georgia","Germany","Greece","Grenada","Guatemala","Guyana","Hungary","Iceland","Ireland","Israel","Italy","Jamaica","Japan","Kazakhstan","Kiribati","Kuwait","Kyrgyzstan","Latvia","Lithuania","Luxembourg","Macau","Maldives","Malta","Mauritius","Mexico","Mongolia","Montenegro","Netherlands","New Zealand","Nicaragua","Norway","Oman","Panama","Paraguay","Philippines","Poland","Portugal","Puerto Rico","Qatar","Republic of Korea","Romania","Russian Federation","Saint Kitts and Nevis","Saint Lucia","Saint Vincent and Grenadines","San Marino","Serbia","Seychelles","Singapore","Slovakia","Slovenia","South Africa","Spain","Sri Lanka","Suriname","Sweden","Switzerland","Thailand","Trinidad and Tobago","Turkey","Turkmenistan","Ukraine","United Arab Emirates","United Kingdom","United States","Uruguay","Uzbekistan"],"freq":[264,324,372,298,168,360,382,192,276,252,300,252,372,336,24,372,360,12,348,372,372,360,262,288,178,322,264,12,372,288,252,132,348,360,264,312,372,310,360,300,310,382,360,372,372,204,372,312,132,300,312,252,262,372,12,120,372,382,372,10,120,382,348,72,360,36,300,324,180,288,324,372,178,372,334,324,36,336,300,36,216,216,372,264,252,240,372,132,336,358,252,334,324,84,348,336,72,372,372,336,264],"fontFamily":"Segoe UI","fontWeight":"bold","color":"random-light","minSize":0,"weightFactor":0.2120418848167539,"backgroundColor":"black","gridSize":0,"minRotation":-0.7853981633974483,"maxRotation":0.7853981633974483,"shuffle":true,"rotateRatio":0.4,"shape":"pentagon","ellipticity":0.65,"figBase64":null,"hover":null},"evals":[],"jsHooks":{"render":[{"code":"function(el,x){\n                        console.log(123);\n                        if(!iii){\n                          window.location.reload();\n                          iii = False;\n\n                        }\n  }","data":null}]}}</script>
 </div>
 </div>
 
