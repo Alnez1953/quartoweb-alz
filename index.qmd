@@ -3,7 +3,7 @@ title: ""
 about:   
   template: marquee   
 ---
-
+ 
 ```{=html}
 <div class="btn">
   <img id="randomImg" src="" alt="Random Image">
@@ -14,9 +14,9 @@ about:
 <script>
   // Array of image URLs
   const imageUrls = [
-    "https://alnez1953.github.io/quartoweb-alz/lamp.png",
-    "https://images.unsplash.com/photo-1495480393121-409eb65c7fbe?auto=format&fit=crop&w=800&q=80",
-    "https://images.unsplash.com/photo-1501611724492-c09bebdba1ac?auto=format&fit=crop&w=800&q=80"
+    "https://raw.githubusercontent.com/Alnez1953/quartoweb-alz/refs/heads/master/lamp.png",
+    "https://raw.githubusercontent.com/Alnez1953/quartoweb-alz/refs/heads/master/posts/Street/images/DSCF1028.jpg",
+    "https://raw.githubusercontent.com/Alnez1953/quartoweb-alz/refs/heads/master/posts/Oldies/images/DSCN1077.JPG"
   ];
 
   function loadRandomImage() {
