@@ -5,12 +5,19 @@
   background-color: #800020;
 }
 
+
 #title-block-header.quarto-title-block.default .quarto-title .title {
     text-align: center;
 }
 
 .title {
   color: #8B7500;
+}
+
+#randomImg {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
 }
 
 .btn {
@@ -108,7 +115,8 @@ a:active{
 }
 
 h1 {
-  color: #DBDBDB;
+  color: #8b7500;
+  text-align: center;
 }
 
 h2 {

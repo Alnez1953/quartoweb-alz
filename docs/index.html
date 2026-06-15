@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>To be a Stranger – Home</title>
+<title>Home</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -119,16 +119,31 @@ ul.task-list li input[type="checkbox"] {
 <!-- main -->
 <div class="quarto-about-marquee column-page">
   <div class="about-image-container">
-    <img src="lamp.png" class="about-image " style="width: 100%;">
   </div>
   <div class="about-contents">
-    <header id="title-block-header" class="quarto-title-block default">
-<div class="quarto-title">
-<h1 class="title">To be a Stranger</h1>
+    <header id="title-block-header" class="quarto-title-block"></header> <main class="content column-page" id="quarto-document-content">
+<div class="btn">
+  <img id="randomImg" src="" alt="Random Image">
+  <br>
+  <button type="button" class="btn btn-primary btn-sm" id="btnID" onclick="loadRandomImage()">Generate Random Image</button>
 </div>
-<div class="quarto-title-meta column-page">
-  </div>
-</header> <main class="content column-page" id="quarto-document-content">
+<script>
+  // Array of image URLs
+  const imageUrls = [
+    "https://alnez1953.github.io/quartoweb-alz/lamp.png",
+    "https://images.unsplash.com/photo-1495480393121-409eb65c7fbe?auto=format&fit=crop&w=800&q=80",
+    "https://images.unsplash.com/photo-1501611724492-c09bebdba1ac?auto=format&fit=crop&w=800&q=80"
+  ];
+  function loadRandomImage() {
+    const imgElement = document.getElementById("randomImg");
+    const randomIndex = Math.floor(Math.random() * imageUrls.length);
+    imgElement.src = imageUrls[randomIndex];
+  }
+  // Load an image on page load
+  window.onload = loadRandomImage;
+</script>
+<section id="to-be-a-stranger" class="level1">
+<h1>To be a Stranger</h1>
 <p>To be weird, strange; unknown to the masses, unrecognizable to most individuals, could actually be a pretty good place to be. —You won’t have many chances to fail in the eyes of those you admire, and you’ll feel security with a small familiar surrounding. —The downside is, that you’ll never truly meet many people who could have made a difference, all because neither of you took the first step closer.</p>
 <p>Most people have yet to sonder. Realize that everyone else has a life as vivid and complex as their own. So they become uninterested or unmotivated in getting to know an uncommon sight. —We wonder about the thoughts of people we do not know, we weigh differences without waiting or watching, ask what we truly want? —We are strange we sit on the sidelines simply pondering but not seeing ahead. Who isn’t uncommon nowadays?</p>
 <p>When we were babies the world was painted, filled with color, as we grew, we were taught to paint a silhouette to all we didn’t know, to all we didn’t trust, this went on until we became a reflection of our own shadows, lost within our now black canvas, so from there we started a new. We didn’t know who we were, we were strangers to ourselves, we didn’t try to define, we usually left it for someone else to decide. We’ve since learned and have become someone we are proud to be, we look in the mirror and see the truth of our beings, now that we’re free. Look to everyone around, past pains have always been our common ground! Reach out to another and you will see that strangers are worth it, just like you and me.</p>
@@ -204,6 +219,7 @@ ul.task-list li input[type="checkbox"] {
 </table>
 
 
+</section>
 </main> 
   </div>
 </div>
