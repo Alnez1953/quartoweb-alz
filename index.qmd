@@ -5,10 +5,11 @@ about:
 ---
  
 ```{=html}
-  <img id="randomImg" src="" alt="Random Image">
   <div class="btn">
   <button type="btn" class="btn btn-primary btn-sm" id="btnID"onclick="loadRandomImage()">Generate Random Image</button>
   </div>
+  <img id="randomImg" src="" alt="Random Image">
+
 
 <script>
   // Array of image URLs
