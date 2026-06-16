@@ -122,17 +122,16 @@ ul.task-list li input[type="checkbox"] {
   </div>
   <div class="about-contents">
     <header id="title-block-header" class="quarto-title-block"></header> <main class="content column-page" id="quarto-document-content">
-<div class="btn">
   <img id="randomImg" src="" alt="Random Image">
-  <br>
-  <button type="button" class="btn btn-primary btn-sm" id="btnID" onclick="loadRandomImage()">Generate Random Image</button>
-</div>
+  <div class="btn">
+  <button type="btn" class="btn btn-primary btn-sm" id="btnID" onclick="loadRandomImage()">Generate Random Image</button>
+  </div>
 <script>
   // Array of image URLs
   const imageUrls = [
     "https://raw.githubusercontent.com/Alnez1953/quartoweb-alz/refs/heads/master/lamp.png",
     "https://raw.githubusercontent.com/Alnez1953/quartoweb-alz/refs/heads/master/posts/Street/images/DSCF1028.jpg",
-    "https://raw.githubusercontent.com/Alnez1953/quartoweb-alz/refs/heads/master/posts/Oldies/images/DSCN1077.JPG"
+    "https://raw.githubusercontent.com/Alnez1953/quartoweb-alz/refs/heads/master/posts/Oldies/images/DSCN1077.JPG", "https://raw.githubusercontent.com/Alnez1953/quartoweb-alz/refs/heads/master/posts/Japan/images/IMG_4691.jpg", "https://raw.githubusercontent.com/Alnez1953/quartoweb-alz/refs/heads/master/posts/Japan/images/IMG_3881.jpg", "https://raw.githubusercontent.com/Alnez1953/quartoweb-alz/refs/heads/master/posts/Japan/images/IMG_4047.jpg", "https://raw.githubusercontent.com/Alnez1953/quartoweb-alz/refs/heads/master/posts/Japan/images/IMG_5056.jpg", "https://raw.githubusercontent.com/Alnez1953/quartoweb-alz/refs/heads/master/posts/Japan/images/IMG_4964.jpg", "https://raw.githubusercontent.com/Alnez1953/quartoweb-alz/refs/heads/master/posts/Japan/images/DSCF1745.jpg", "https://raw.githubusercontent.com/Alnez1953/quartoweb-alz/refs/heads/master/posts/Japan/images/IMG_5416.jpg", "https://raw.githubusercontent.com/Alnez1953/quartoweb-alz/refs/heads/master/posts/Japan/images/IMG_5218.jpg", "https://raw.githubusercontent.com/Alnez1953/quartoweb-alz/refs/heads/master/posts/Japan/images/IMG_5736.jpg", "https://raw.githubusercontent.com/Alnez1953/quartoweb-alz/refs/heads/master/posts/Oldies/images/DSCN0857.JPG", "https://raw.githubusercontent.com/Alnez1953/quartoweb-alz/refs/heads/master/posts/Oldies/images/DSCN0532.JPG", "https://raw.githubusercontent.com/Alnez1953/quartoweb-alz/refs/heads/master/posts/UT%EF%BC%BFID/images/IMG_1786.jpg", "https://raw.githubusercontent.com/Alnez1953/quartoweb-alz/refs/heads/master/posts/UT%EF%BC%BFID/images/bus.jpg", "https://raw.githubusercontent.com/Alnez1953/quartoweb-alz/refs/heads/master/posts/UT%EF%BC%BFID/images/IMG_1605.jpg", "https://raw.githubusercontent.com/Alnez1953/quartoweb-alz/refs/heads/master/posts/UT%EF%BC%BFID/images/IMG_1427.jpg", "https://raw.githubusercontent.com/Alnez1953/quartoweb-alz/refs/heads/master/posts/Street/images/IMG_3086.jpg", "https://raw.githubusercontent.com/Alnez1953/quartoweb-alz/refs/heads/master/posts/Macro/images/IMG_0836.jpg"
   ];
   function loadRandomImage() {
     const imgElement = document.getElementById("randomImg");
