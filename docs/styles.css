@@ -25,6 +25,11 @@
   justify-content: center;
 }
 
+.btn-container {
+    display: flex;
+    justify-content: space-around;
+}
+
 .btn-primary {
     background-color: #800020;
   --bs-btn-bg: #800020;
